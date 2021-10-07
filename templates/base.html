@@ -27,34 +27,19 @@
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item"><a class="nav-link active" aria-current="page" href="{{ url_for('index') }}">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="{{ url_for('register') }}">Register</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">Log in </a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">Log out </a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">Profile</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{ url_for('login') }}">Log in </a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{ url_for('logout') }}">Log out </a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{ url_for('profile') }}">Profile</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{ url_for('add_recipe') }}">Recipe</a></li>
 
                     </ul>
                 </div>
             </div>
         </nav>
-        <!-- Header-->
-        <header class="py-5">
-            <div class="container px-lg-5">
-                <div id="header" class="p-4 p-lg-5 bg-black rounded-3 text-center">
-                    <div class="m-4 m-lg-5">
-                        <img src="{{ url_for('static', filename='assets/images/drink.jpg')}}">
-                        <h1 class="display-5 fw-bold">Cocktail Bible</h1>
-                        <p class="fs-4">Bootstrap utility classes are used to create this jumbotron since the old component has been removed from the framework. Why create custom CSS when you can use utilities?</p>
-                        <a class="btn btn-success btn-lg" href="#!">Call to action</a>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <!-- Page Content-->
-        <section class="pt-4">
-            <div class="container px-lg-5">
-                {% block content%}
-                {% endblock %}
-            </div>
-        </section>
+        <div class="container px-lg-5">
+        {% block content %}
+        {% endblock %}
+        </div>
         <!-- Footer-->
         <footer class="py-5 bg-dark">
             <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2021</p></div>

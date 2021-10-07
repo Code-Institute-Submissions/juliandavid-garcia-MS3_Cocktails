@@ -10,9 +10,19 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+ #profile{
+  padding-top: 35%;
+ }
+ @media only screen and (min-width: 1024px){
+  #profile{
+    font-size: 60px;
+    margin-top: 5%;
+   }
+ }
  #navbarSupportedContent{
    z-index: 2;
  }
+
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;

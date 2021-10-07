@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block content %}
+
+    <div class="row">
+        <div class="col s12 m7">
+            <div class="row">
+                <div class="col m6 s12">
+                    <div class="card vertical">
+                        <div class="card-image">
+                            <img src="https://freesvg.org/img/abstract-user-flat-4.png">
+                        </div>    
+                    </div>
+                </div>
+                <div class="col m6 s12">
+                    <div class="card-stacked">
+                        <div class="card-content">
+                            <h1 id="profile" class="center-align white-text">
+                                Welcome back 
+                                {{ username }}!
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

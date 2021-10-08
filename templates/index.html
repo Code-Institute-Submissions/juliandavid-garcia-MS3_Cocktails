@@ -24,10 +24,21 @@
                         <h2 class="fs-4 fw-bold">Whiskey</h2>
                         <!--Materialized collapsed Whiskey-->
                         <ul class="collapsible">
+                            {% for cocktail in cocktails%}
                             <li>
-                              <div class="collapsible-header">First</div>
-                              <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                                {% if cocktail.category_name == "whiskey" %}
+                                <div class="collapsible-header">
+                                  <strong>{{ cocktail.cocktail_name }}</strong>
+                                </div>
+                                <div class="collapsible-body">
+                                    <strong>{{ cocktail.cocktail_name }}</strong>
+                                    <p>{{cocktail.ingredients}}</p>
+                                    <p>{{cocktail.preparation}}</p>
+                                    <p>{{cocktail.by}}</p>
+                                </div>
+                                {% endif %}
                             </li>
+                            {% endfor %}
                           </ul>
                         <p class="mb-0">With Bootstrap 5, we've created a fresh new layout for this template!</p>
                     </div>
@@ -40,10 +51,21 @@
                         <h2 class="fs-4 fw-bold">Rum</h2>
                         <!--Materialized collapsed rum-->
                         <ul class="collapsible">
+                            {% for cocktail in cocktails%}
                             <li>
-                              <div class="collapsible-header">First</div>
-                              <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                                {% if cocktail.category_name == "rum" %}
+                                <div class="collapsible-header">
+                                  <strong>{{ cocktail.cocktail_name }}</strong>
+                                </div>
+                                <div class="collapsible-body">
+                                    <strong>{{ cocktail.cocktail_name }}</strong>
+                                    <p>{{cocktail.ingredients}}</p>
+                                    <p>{{cocktail.preparation}}</p>
+                                    <p>{{cocktail.by}}</p>
+                                </div>
+                                {% endif %}
                             </li>
+                            {% endfor %}
                           </ul>
                         <p class="mb-0">As always, Start Bootstrap has a powerful collectin of free templates.</p>
                     </div>

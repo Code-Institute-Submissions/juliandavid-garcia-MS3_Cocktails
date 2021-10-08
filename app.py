@@ -95,9 +95,9 @@ def logout():
 
 
 
-@app.route("/add_recipe")
-def add_recipe(): 
-    return render_template("add_recipe.html")
+@app.route("/add_cocktail")
+def add_cocktail(): 
+    return render_template("add_cocktail.html")
 
 
 if __name__=="__main__":

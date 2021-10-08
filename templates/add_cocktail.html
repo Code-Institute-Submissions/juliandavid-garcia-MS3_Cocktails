@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block content %}
+
+    <h3 class="white-text text-darken-4 center-align">Add A Cocktail</h3>
+
+    <div class="row card-panel black lighten-1 white-text">
+        <form class="col s12" method="POST" action="">
+            <div class="row">
+                <div class="input-field col s12">
+                    <i class="fas fa-cocktail prefix light-blue-text text-darken-4"></i>
+                    <input id="cocktail_name" name="cocktail_name" minlength="5" maxlength="50"
+                        type="text" class="validate white-text" required>
+                    <label for="cocktail_name">Cocktail Name</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <i class="fas fa-wine-bottle prefix light-blue-text text-darken-4"></i>
+                    <textarea id="ingredients" name="ingredients" minlength="5"
+                        maxlength="200" class="materialize-textarea validate white-text" required></textarea>
+                    <label for="ingredients">Ingredients</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <i class="fas fa-wine-bottle prefix light-blue-text text-darken-4"></i>
+                    <textarea id="preparation" name="preparation" minlength="5"
+                        maxlength="200" class="materialize-textarea validate white-text" required></textarea>
+                    <label for="preparation">Preparation</label>
+                </div>
+            </div>
+            
+
+{% endblock %}

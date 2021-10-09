@@ -78,10 +78,21 @@
                         <h2 class="fs-4 fw-bold">Vodka</h2>
                         <!--Materialized collapsed Vodka-->
                         <ul class="collapsible">
+                            {% for cocktail in cocktails%}
                             <li>
-                              <div class="collapsible-header">Vodka</div>
-                              <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                                {% if cocktail.category_name == "vodka" %}
+                                <div class="collapsible-header">
+                                  <strong>{{ cocktail.cocktail_name }}</strong>
+                                </div>
+                                <div class="collapsible-body">
+                                    <strong>{{ cocktail.cocktail_name }}</strong>
+                                    <p>{{cocktail.ingredients}}</p>
+                                    <p>{{cocktail.preparation}}</p>
+                                    <p>{{cocktail.by}}</p>
+                                </div>
+                                {% endif %}
                             </li>
+                            {% endfor %}
                           </ul>
                         <p class="mb-0">The heroic part of this template is the jumbotron hero header!</p>
                     </div>
@@ -94,10 +105,21 @@
                         <h2 class="fs-4 fw-bold">Cognac</h2>
                          <!--Materialized collapsed cognac-->
                          <ul class="collapsible">
+                            {% for cocktail in cocktails%}
                             <li>
-                              <div class="collapsible-header">First</div>
-                              <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                                {% if cocktail.category_name == "cognac" %}
+                                <div class="collapsible-header">
+                                  <strong>{{ cocktail.cocktail_name }}</strong>
+                                </div>
+                                <div class="collapsible-body">
+                                    <strong>{{ cocktail.cocktail_name }}</strong>
+                                    <p>{{cocktail.ingredients}}</p>
+                                    <p>{{cocktail.preparation}}</p>
+                                    <p>{{cocktail.by}}</p>
+                                </div>
+                                {% endif %}
                             </li>
+                            {% endfor %}
                           </ul>
                         <p class="mb-0">We've created some custom feature boxes using Bootstrap icons!</p>
                     </div>

@@ -5,6 +5,19 @@
 
     <div class="row card-panel black lighten-1 white-text">
         <form class="col s12" method="POST" action="">
+        <div class="row">
+            <div class="input-field  white-text col s12">
+                <i class="fas fa-folder-open prefix white-text text-white"></i>
+                <select id="category_name" name="category_name" class="validate white-text" required> 
+                    <option class="white-text" value="" disabled selected>Choose a Category
+                    </option>
+                    {% for category in categories %}
+                    <option class="white-text" value="{{ category.category_name }}">{{category.category_name}}</option>
+                    {% endfor %}
+                </select>
+                    <label for="category_name">Materialize Select</label>
+              </div>
+        </div>
             <div class="row">
                 <div class="input-field col s12">
                     <i class="fas fa-cocktail prefix light-blue-text text-darken-4"></i>

@@ -7,4 +7,5 @@
 // Use this file to add JavaScript to your project
 $(document).ready(function(){
     $('.collapsible').collapsible();
+    $('select').formSelect();
   });

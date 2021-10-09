@@ -78,6 +78,8 @@ def login():
 
 @app.route("/profile/<username>", methods=["GET", "POST"])
 def profile(username):
+    cocktails = list(mongo.db.cocktails.find())
+    return render_template("profile.html", cocktails=cocktails)
     # grab the session user's username from db
     username = mongo.db.users.find_one(
         {"username": session["user"]})["username"]
@@ -85,6 +87,7 @@ def profile(username):
     if session["user"]:
         return render_template("profile.html", username=username)
 
+    
     
 @app.route("/logout")
 def logout():

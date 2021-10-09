@@ -130,21 +130,30 @@
                     <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
                         <div class="feature bg-success bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="bi bi-code"></i></div>
                        <br>
+                       {% if session.user %}
                        <div class="row">
-                        <div class="col s12 center-align">
-                            <button class="btn-large waves-effect waves-black white text-shadow black-text bold" type="submit">
-                                <h2>Add your own Recipe
-                                    <i class="fas fa-plus-circle"></i>
-                                </h2>
-                            </button>
+                            <div class="col s12 center-align">
+                                    <a href="{{ url_for('add_cocktail') }}" class="btn-large waves-effect waves-black white text-shadow black-text bold" type="submit"><h2>Add your own Recipe
+                                        <i class="fas fa-plus-circle"></i>
+                                    </h2></a>
+                            </div>
                         </div>
-                    </div>
+                        {% else %}
+                        <div class="row">
+                            <div class="col s12 center-align">
+                                    <a href="{{ url_for('login') }}" class="btn-large waves-effect waves-black white text-shadow black-text bold" type="submit"><h2>Add your own Recipe
+                                        <i class="fas fa-plus-circle"></i>
+                                    </h2></a>
+                            </div>
+                        </div>
                           <p class="">To add a recipe you need to be logged in!</p>
                     </div>
+                    {% endif %}
                 </div>
             </div>
         </div>
     </div>
 </section>
 {% endblock %}
+
 

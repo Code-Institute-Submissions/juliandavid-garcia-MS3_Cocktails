@@ -10,10 +10,14 @@
             <div class="input-field  white-text col s12">
                 <i class="fas fa-folder-open prefix white-text text-white"></i>
                 <select id="category_name" name="category_name" class="validate white-text" required>
-                    <option class="white-text" value="" disabled selected>Choose a Category
+                    <option class="white-text" value="" disabled>Choose a Category
                     </option>
                     {% for category in categories %}
-                    <option class="white-text" value="{{ category.category_name }}">{{category.category_name}}</option>
+                    {% if category.category_name ==  cocktail.category_name %}
+                        <option class="white-text" value="{{ category.category_name }}" selected>{{category.category_name}}</option>
+                    {% else %}
+                        <option class="white-text" value="{{ category.category_name }}">{{category.category_name}}</option>
+                        {% endif %}
                     {% endfor %}
                 </select>
                 <label for="category_name">Cocktail Category</label>
@@ -22,7 +26,7 @@
         <div class="row">
             <div class="input-field col s12">
                 <i class="fas fa-cocktail prefix light-blue-text text-darken-4"></i>
-                <input id="cocktail_name" name="cocktail_name" minlength="5" maxlength="50" type="text"
+                <input id="cocktail_name" name="cocktail_name" minlength="5" maxlength="50" value="{{cocktail.cocktail_name}}" type="text"
                     class="validate white-text" required>
                 <label for="cocktail_name">Cocktail Name</label>
             </div>
@@ -31,7 +35,7 @@
             <div class="input-field col s12">
                 <i class="fas fa-wine-bottle prefix light-blue-text text-darken-4"></i>
                 <textarea id="ingredients" name="ingredients" minlength="5" maxlength="200"
-                    class="materialize-textarea validate white-text" required></textarea>
+                    class="materialize-textarea validate white-text" required>{{cocktail.ingredients}}"</textarea>
                 <label for="ingredients">Ingredients</label>
             </div>
         </div>
@@ -39,15 +43,17 @@
             <div class="input-field col s12">
                 <i class="fas fa-wine-bottle prefix light-blue-text text-darken-4"></i>
                 <textarea id="preparation" name="preparation" minlength="5" maxlength="200"
-                    class="materialize-textarea validate white-text" required></textarea>
+                    class="materialize-textarea validate white-text" required>{{cocktail.preparation}}</textarea>
                 <label for="preparation">Preparation</label>
             </div>
         </div>
         <div class="row">
             <div class="col s12 center-align">
+                <a href="{{ url_for('get_cocktails') }}" class="btn-large red waves-effect waves-black text-shadow">
+                    Cancel <i class="fas fa-times-circle right"></i></a>
                 <button class="btn-large waves-effect waves-black white text-shadow black-text bold" type="submit">
-                    <h2>Submit
-                        <i class="fas fa-plus-circle"></i>
+                    <h2>Edit
+                        <i class="fas fa-edit"></i>
                     </h2>
                 </button>
             </div>

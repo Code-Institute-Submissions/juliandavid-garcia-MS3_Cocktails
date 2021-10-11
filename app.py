@@ -120,6 +120,16 @@ def add_cocktail():
 
 @app.route("/edit_cocktail/<cocktail_id>", methods=["GET", "POST"])
 def edit_cocktail(cocktail_id):
+    if request.method == "POST":
+        submit = {
+            "category_name": request.form.get("category_name"),
+            "cocktail_name": request.form.get("cocktail_name"),
+            "ingredients": request.form.getlist("ingredients"),
+            "preparation": request.form.get("preparation"),
+            "by": session["user"]
+        }
+        mongo.db.cocktails.update({"_id":ObjectId(cocktail_id)},submit)
+        flash("Cocktail Successfully Updated")
     cocktail = mongo.db.cocktails.find_one({"_id": ObjectId(cocktail_id)})
     categories = mongo.db.categories.find().sort("category_name", 1)
     return render_template("edit_cocktail.html", cocktail=cocktail, categories=categories)

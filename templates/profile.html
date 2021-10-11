@@ -37,9 +37,11 @@
                                                 <div class="collapsible-header">
                                                     <strong>{{ cocktail.cocktail_name }}
                                                     </strong>
+                                                    {% if session.user|lower == cocktail.by%}
                                                     <a href="{{ url_for('edit_cocktail',cocktail_id=cocktail._id)}}" class="btn-floating btn-large waves-effect waves-light dark"><i class="fas fa-edit"></i></a>
                                                     
                                                     <a class="btn-floating btn-large waves-effect waves-light red center"><i class="fas fa-trash-alt"></i></a>
+                                                    {% endif %}
                                                 </div>
                                                 <div class="collapsible-body">
                                                     <strong>{{ cocktail.cocktail_name }}

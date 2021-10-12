@@ -11,10 +11,10 @@
                     <label for="query">Search cocktail</label>
                 </div>
                 <div class="col s12 m4">
-                    <button type="submit" class="light-blue darken-1 btn-small text-shadow">
+                    <button id="icon" type="submit" class="white btn text-shadow">
                         <i class="fas fa-search left"></i>
                     </button>
-                    <a href="{{ url_for('get_cocktails') }}" class="red btn text-shadow">Reset</a>
+                    <a href="{{ url_for('get_cocktails') }}" id="icon2" class="btn text-shadow"><i class="fas fa-sync-alt"></i></a>
                 </div>
             </div>
         </form>
@@ -39,7 +39,7 @@
             <div class="col-lg-6 col-xxl-6 mb-5">
                 <div class="card bg-black text-white border-0 h-100">
                     <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
-                        <div class="feature bg-success bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="fas fa-glass-whiskey"></i></div>
+                        <div class="feature bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="fas fa-glass-whiskey"></i></div>
                         <h2 class="fs-4 fw-bold">Whiskey</h2>
                         <!--Materialized collapsed Whiskey-->
                         <ul class="collapsible">
@@ -59,14 +59,14 @@
                             </li>
                             {% endfor %}
                           </ul>
-                        <p class="mb-0">With Bootstrap 5, we've created a fresh new layout for this template!</p>
+                        <p class="mb-0"> "Too much of anything is bad. But too much good whiskey is barely enough." </p>
                     </div>
                 </div>
             </div>
             <div class="col-lg-6 col-xxl-6 mb-5">
                 <div class="card bg-black text-white border-0 h-100">
                     <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
-                        <div class="feature bg-success bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="fas fa-wine-bottle"></i></div>
+                        <div class="feature bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="fas fa-wine-bottle"></i></div>
                         <h2 class="fs-4 fw-bold">Rum</h2>
                         <!--Materialized collapsed rum-->
                         <ul class="collapsible">
@@ -86,14 +86,14 @@
                             </li>
                             {% endfor %}
                           </ul>
-                        <p class="mb-0">As always, Start Bootstrap has a powerful collectin of free templates.</p>
+                        <p class="mb-0">“There Is a Rum for Everyone, but They Don’t Know It……Yet.”</p>
                     </div>
                 </div>
             </div>
             <div class="col-lg-6 col-xxl-6 mb-5">
                 <div class="card bg-black text-white border-0 h-100">
                     <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
-                        <div class="feature bg-success bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="fas fa-cocktail"></i></div>
+                        <div class="feature bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="fas fa-cocktail"></i></div>
                         <h2 class="fs-4 fw-bold">Vodka</h2>
                         <!--Materialized collapsed Vodka-->
                         <ul class="collapsible">
@@ -101,10 +101,10 @@
                             <li>
                                 {% if cocktail.category_name == "Vodka" %}
                                 <div class="collapsible-header">
-                                  <strong>{{ cocktail.cocktail_name }}</strong>
+                                  <strong  class="text-black">{{ cocktail.cocktail_name }}</strong>
                                 </div>
                                 <div class="collapsible-body">
-                                    <strong class="text-black">{{ cocktail.cocktail_name }}</strong>
+                                    <strong>{{ cocktail.cocktail_name }}</strong>
                                     <p>{{cocktail.ingredients}}</p>
                                     <p>{{cocktail.preparation}}</p>
                                     <p><em>by:{{cocktail.by}}</em></p>
@@ -113,14 +113,14 @@
                             </li>
                             {% endfor %}
                           </ul>
-                        <p class="mb-0">The heroic part of this template is the jumbotron hero header!</p>
+                        <p class="mb-0">"Money, like vodka, turns a person into an eccentric."</p>
                     </div>
                 </div>
             </div>
             <div class="col-lg-6 col-xxl-6 mb-5">
                 <div class="cardbg-black text-white border-0 h-100">
                     <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
-                        <div class="feature bg-success bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="fas fa-glass-cheers"></i></div>
+                        <div class="feature bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="fas fa-glass-cheers"></i></div>
                         <h2 class="fs-4 fw-bold">Cognac</h2>
                          <!--Materialized collapsed cognac-->
                          <ul class="collapsible">
@@ -140,14 +140,14 @@
                             </li>
                             {% endfor %}
                           </ul>
-                        <p class="mb-0">We've created some custom feature boxes using Bootstrap icons!</p>
+                        <p class="mb-0">"In beer there is freedom, in wine there is health, in cognac there is power and in water there is bacteria." </p>
                     </div>
                 </div>
             </div>
             <div class="col-lg-6 col-xxl-6 mb-5">
                 <div class="card bg-black text-white border-0 h-100">
                     <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
-                        <div class="feature bg-success bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="fas fa-glass-cheers"></i></div>
+                        <div class="feature bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="fas fa-pepper-hot"></i></div>
                         <h2 class="fs-4 fw-bold">Tequila</h2>
                          <!--Materialized collapsed Tequila-->
                          <ul class="collapsible">
@@ -167,14 +167,14 @@
                             </li>
                             {% endfor %}
                           </ul>
-                        <p class="mb-0">We've created some custom feature boxes using Bootstrap icons!</p>
+                        <p class="mb-0">"Tequila is like duct tape, it fixes nearly everything." </p>
                     </div>
                 </div>
             </div>
             <div class="col-lg-6 col-xxl-6 mb-5">
                 <div class="card bg-black text-white border-0 h-100">
                     <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
-                        <div class="feature bg-success bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="fas fa-glass-cheers"></i></div>
+                        <div class="feature bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="fas fa-glass-martini"></i></div>
                         <h2 class="fs-4 fw-bold">Others</h2>
                          <!--Materialized collapsed Others-->
                          <ul class="collapsible">
@@ -194,14 +194,14 @@
                             </li>
                             {% endfor %}
                           </ul>
-                        <p class="mb-0">We've created some custom feature boxes using Bootstrap icons!</p>
+                        <p class="mb-0">"Childhood is like being drunk, everyone remembers what you did, except you."</p>
                     </div>
                 </div>
             </div>
             <div class="col-12 mb-5">
                 <div class="card bg-black text-white border-0 h-100">
                     <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
-                        <div class="feature bg-success bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="bi bi-code"></i></div>
+                        <div class="feature bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="bi bi-code"></i></div>
                        <br>
                        {% if session.user %}
                        <div class="row">

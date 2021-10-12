@@ -10,6 +10,17 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+
+#quote {
+   margin-top: 40px;
+ }
+ header{
+   margin-top: -80px;
+ }
+
+ #searchbar{
+   margin-top: 20px;
+ }
  .btn-floating.btn-large {
   width: 56px;
   height: 56px;
@@ -222,7 +233,7 @@ address {
 }
 
 ul:not(.browser-default) {
-  padding-left: 20px;
+  padding-left: 0px;
   list-style-type: none;
 }
 

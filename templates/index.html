@@ -1,41 +1,43 @@
 {% extends "base.html" %}
 
 {% block content %}
+<div id="searchbar">
+    <div class="row card-panel black lighten-5">
+        <form action="{{ url_for('search') }}" method="post" class="col s12 m6">
+            <div class="row valign-wrapper center-align">
+                <div class="input-field col s6 m6">
+                    <i class="fas fa-search prefix light-blue-text text-darken-4"></i>
+                    <input type="text" name="query" id="query" minlength="3" class="validate" required>
+                    <label for="query">Search cocktail</label>
+                </div>
+                <div class="col s12 m4">
+                    <button type="submit" class="light-blue darken-1 btn-small text-shadow">
+                        <i class="fas fa-search left"></i>
+                    </button>
+                    <a href="{{ url_for('get_cocktails') }}" class="red btn text-shadow">Reset</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
  <!-- Header-->
- <header class="py-5">
+ <header class="py-3">
         <div id="header" class="p-4 p-lg-5 bg-black rounded-3 text-center">
+            <h1 class="display-5 fw-bold">Cocktail Bible</h1>
             <div class="m-4 m-lg-5">
                 <img src="{{ url_for('static', filename='assets/images/drinktt.jpg')}}">
-                <h1 class="display-5 fw-bold">Cocktail Bible</h1>
-                <p class="fs-4">Bootstrap utility classes are used to create this jumbotron since the old component has been removed from the framework. Why create custom CSS when you can use utilities?</p>
-                <div class="row card-panel grey lighten-5">
-                    <form action="{{ url_for('search') }}" method="post" class="col s12">
-                        <div class="row valign-wrapper center-align">
-                            <div class="input-field col s12 m8">
-                                <i class="fas fa-search prefix light-blue-text text-darken-4"></i>
-                                <input type="text" name="query" id="query" minlength="3" class="validate" required>
-                                <label for="query">Search Tasks</label>
-                            </div>
-                            <div class="col s12 m4">
-                                <a href="{{ url_for('get_cocktails') }}" class="red btn text-shadow">Reset</a>
-                                <button type="submit" class="light-blue darken-1 btn text-shadow">
-                                    <i class="fas fa-search left"></i> Search
-                                </button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-                <a class="btn btn-success btn-lg" href="#!">Call to action</a>
+                <br>
+                <h3 id="quote" class=""><em>You can’t buy happiness, but you can prepare a cocktail. And that’s kind of the same thing.</em></h3>
             </div>
         </div>
-    </div>
 </header>
+
 <!-- Page Content-->
 <section class="pt-4">
     <div class="container px-lg-5">
         <div class="row gx-lg-5">
             <div class="col-lg-6 col-xxl-6 mb-5">
-                <div class="card bg-light border-0 h-100">
+                <div class="card bg-black text-white border-0 h-100">
                     <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
                         <div class="feature bg-success bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="fas fa-glass-whiskey"></i></div>
                         <h2 class="fs-4 fw-bold">Whiskey</h2>
@@ -45,7 +47,7 @@
                             <li>
                                 {% if cocktail.category_name == "Whiskey" %}
                                 <div class="collapsible-header">
-                                  <strong>{{ cocktail.cocktail_name }}</strong>
+                                  <strong class="text-black">{{ cocktail.cocktail_name }}</strong>
                                 </div>
                                 <div class="collapsible-body">
                                     <strong>{{ cocktail.cocktail_name }}</strong>
@@ -62,7 +64,7 @@
                 </div>
             </div>
             <div class="col-lg-6 col-xxl-6 mb-5">
-                <div class="card bg-light border-0 h-100">
+                <div class="card bg-black text-white border-0 h-100">
                     <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
                         <div class="feature bg-success bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="fas fa-wine-bottle"></i></div>
                         <h2 class="fs-4 fw-bold">Rum</h2>
@@ -72,7 +74,7 @@
                             <li>
                                 {% if cocktail.category_name == "Rum" %}
                                 <div class="collapsible-header">
-                                  <strong>{{ cocktail.cocktail_name }}</strong>
+                                  <strong class="text-black">{{ cocktail.cocktail_name }}</strong>
                                 </div>
                                 <div class="collapsible-body">
                                     <strong>{{ cocktail.cocktail_name }}</strong>
@@ -89,7 +91,7 @@
                 </div>
             </div>
             <div class="col-lg-6 col-xxl-6 mb-5">
-                <div class="card bg-light border-0 h-100">
+                <div class="card bg-black text-white border-0 h-100">
                     <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
                         <div class="feature bg-success bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="fas fa-cocktail"></i></div>
                         <h2 class="fs-4 fw-bold">Vodka</h2>
@@ -102,7 +104,7 @@
                                   <strong>{{ cocktail.cocktail_name }}</strong>
                                 </div>
                                 <div class="collapsible-body">
-                                    <strong>{{ cocktail.cocktail_name }}</strong>
+                                    <strong class="text-black">{{ cocktail.cocktail_name }}</strong>
                                     <p>{{cocktail.ingredients}}</p>
                                     <p>{{cocktail.preparation}}</p>
                                     <p><em>by:{{cocktail.by}}</em></p>
@@ -116,7 +118,7 @@
                 </div>
             </div>
             <div class="col-lg-6 col-xxl-6 mb-5">
-                <div class="card bg-light border-0 h-100">
+                <div class="cardbg-black text-white border-0 h-100">
                     <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
                         <div class="feature bg-success bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="fas fa-glass-cheers"></i></div>
                         <h2 class="fs-4 fw-bold">Cognac</h2>
@@ -126,7 +128,61 @@
                             <li>
                                 {% if cocktail.category_name == "Cognac" %}
                                 <div class="collapsible-header">
-                                  <strong>{{ cocktail.cocktail_name }}</strong>
+                                  <strong class="text-black">{{ cocktail.cocktail_name }}</strong>
+                                </div>
+                                <div class="collapsible-body">
+                                    <strong>{{ cocktail.cocktail_name }}</strong>
+                                    <p>{{cocktail.ingredients}}</p>
+                                    <p>{{cocktail.preparation}}</p>
+                                    <p><em>by:{{cocktail.by}}</em></p>
+                                </div>
+                                {% endif %}
+                            </li>
+                            {% endfor %}
+                          </ul>
+                        <p class="mb-0">We've created some custom feature boxes using Bootstrap icons!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-xxl-6 mb-5">
+                <div class="card bg-black text-white border-0 h-100">
+                    <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+                        <div class="feature bg-success bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="fas fa-glass-cheers"></i></div>
+                        <h2 class="fs-4 fw-bold">Tequila</h2>
+                         <!--Materialized collapsed Tequila-->
+                         <ul class="collapsible">
+                            {% for cocktail in cocktails%}
+                            <li>
+                                {% if cocktail.category_name == "Tequila" %}
+                                <div class="collapsible-header">
+                                  <strong class="text-black">{{ cocktail.cocktail_name }}</strong>
+                                </div>
+                                <div class="collapsible-body">
+                                    <strong>{{ cocktail.cocktail_name }}</strong>
+                                    <p>{{cocktail.ingredients}}</p>
+                                    <p>{{cocktail.preparation}}</p>
+                                    <p><em>by:{{cocktail.by}}</em></p>
+                                </div>
+                                {% endif %}
+                            </li>
+                            {% endfor %}
+                          </ul>
+                        <p class="mb-0">We've created some custom feature boxes using Bootstrap icons!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-xxl-6 mb-5">
+                <div class="card bg-black text-white border-0 h-100">
+                    <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+                        <div class="feature bg-success bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="fas fa-glass-cheers"></i></div>
+                        <h2 class="fs-4 fw-bold">Others</h2>
+                         <!--Materialized collapsed Others-->
+                         <ul class="collapsible">
+                            {% for cocktail in cocktails%}
+                            <li>
+                                {% if cocktail.category_name == "Others" %}
+                                <div class="collapsible-header">
+                                  <strong class="text-black">{{ cocktail.cocktail_name }}</strong>
                                 </div>
                                 <div class="collapsible-body">
                                     <strong>{{ cocktail.cocktail_name }}</strong>
@@ -143,7 +199,7 @@
                 </div>
             </div>
             <div class="col-12 mb-5">
-                <div class="card bg-light border-0 h-100">
+                <div class="card bg-black text-white border-0 h-100">
                     <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
                         <div class="feature bg-success bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="bi bi-code"></i></div>
                        <br>

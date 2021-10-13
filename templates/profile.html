@@ -15,7 +15,8 @@
                 <div class="card-stacked">
                     <div class="card-content">
                         <h1 id="profile" class="center-align white-text">
-                            {{ username }}
+                          Welcome Back <br>
+                          {{ username }}
                         </h1>
                     </div>
                 </div>
@@ -25,34 +26,38 @@
                     <div class="container px-lg-8">
                         <div class="row gx-lg-5">
                             <div class="col-lg-12 col-xxl-12 mb-12">
-                                <div class="card bg-light border-0 h-100">
+                                <div class="card black border-0 h-100">
                                     <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
-                                        <div class="feature bg-success bg-gradient text-white rounded-3 mb-4 mt-n4"><i
+                                        <div class="feature bg-gradient text-white rounded-3 mb-4 mt-n4"><i
                                                 class="fas fa-glass-whiskey"></i></div>
-                                        <h2 class="fs-4 fw-bold">Your Cocktails </h2>
+                                        <h2 class="fs-4 fw-bold white-text">Your Cocktails </h2>
                                         <!--Materialized collapsed Whiskey-->
+                                        
                                         <ul class="collapsible">
                                             {% for cocktail in cocktails%}
+                                            {% if session.user|lower == cocktail.by%}
                                             <li>
                                                 <div class="collapsible-header">
-                                                    <strong>{{ cocktail.cocktail_name }}
+                                                    <strong class="text-black">{{ cocktail.cocktail_name }}
                                                     </strong>
-                                                    {% if session.user|lower == cocktail.by%}
+                                                    
                                                     <a href="{{ url_for('edit_cocktail',cocktail_id=cocktail._id)}}" class="btn-floating btn-large waves-effect waves-light dark"><i class="fas fa-edit"></i></a>
                                                     
                                                     <a href="{{ url_for('delete_cocktail',cocktail_id=cocktail._id)}}" class="btn-floating btn-large waves-effect waves-light red center"><i class="fas fa-trash-alt"></i></a>
-                                                    {% endif %}
+                                                    
                                                 </div>
-                                                <div class="collapsible-body">
-                                                    <strong>{{ cocktail.cocktail_name }}
+                                                <div class="collapsible-body text-white">
+                                                    <strong >{{ cocktail.cocktail_name }}
                                                     </strong>
                                                     <p>{{cocktail.ingredients}}</p>
                                                     <p>{{cocktail.preparation}}</p>
                                                     <p><em>by:{{cocktail.by}}</em></p>
                                                 </div>
                                             </li>
+                                                {% endif %}
                                             {% endfor %}
                                         </ul>
+                                        
                                         <p class="mb-0">With Bootstrap 5, we've created a fresh new layout for this
                                             template!</p>
                                     </div>

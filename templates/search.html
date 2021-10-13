@@ -1,35 +1,35 @@
 {% extends "base.html" %}
 {% block content %}
 
-<div class=""></div>
-<div class="row card-panel grey lighten-5">
-    <form action="{{ url_for('search') }}" method="post" class="col s12">
-        <div class="row valign-wrapper center-align">
-            <div class="input-field col s12 m8">
-                <i class="fas fa-search prefix light-blue-text text-darken-4"></i>
-                <input type="text" name="query" id="query" minlength="3" class="validate" required>
-                <label for="query">Search Tasks</label>
+<div id="searchbar">
+    <div class="row card-panel black lighten-5">
+        <form action="{{ url_for('search') }}" method="post" class="col s12 m6">
+            <div class="row valign-wrapper center-align">
+                <div class="input-field col s6 m6">
+                    <i class="fas fa-search prefix light-blue-text text-darken-4"></i>
+                    <input type="text" name="query" id="query" minlength="3" class="validate" required>
+                    <label for="query">Search cocktail</label>
+                </div>
+                <div class="col s12 m4">
+                    <button id="icon" type="submit" class="white btn text-shadow">
+                        <i class="fas fa-search left"></i>
+                    </button>
+                    <a href="{{ url_for('get_cocktails') }}" id="icon2" class="btn text-shadow"><i class="fas fa-sync-alt"></i></a>
+                </div>
             </div>
-            <div class="col s12 m4">
-                <a href="{{ url_for('get_cocktails') }}" class="red btn text-shadow">Reset</a>
-                <button type="submit" class="light-blue darken-1 btn text-shadow">
-                    <i class="fas fa-search left"></i> Search
-                </button>
-            </div>
-        </div>
-    </form>
+        </form>
+    </div>
 </div>
-<div><i class="fas fa-glass-whiskey"></i></div>
-<h2 class="fs-4 fw-bold">Your Cocktails </h2>
+
+<h1 class="fw-bold text-center text-white">Results of your Search </h1>
 <!--Materialized collapsed Whiskey-->
 <ul class="collapsible">
     {% for cocktail in cocktails%}
     <li>
         <div class="collapsible-header">
-            <strong>{{ cocktail.cocktail_name }}
-            </strong>
+            <strong class="text-black">{{ cocktail.cocktail_name }}</strong>
         </div>
-        <div class="collapsible-body">
+        <div class="collapsible-body text-white">
             <strong>{{ cocktail.cocktail_name }}
             </strong>
             <p>{{cocktail.ingredients}}</p>

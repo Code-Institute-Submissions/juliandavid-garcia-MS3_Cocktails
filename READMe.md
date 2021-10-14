@@ -36,25 +36,22 @@ As i want the site to be intuitive for the user all recipes are sorted by catego
 
 
 
-## 1. 2  [Wireframes ](/wiframes-images/wiframes.jpg)
-[See Wireframes ](/wiframes-images/wiframes.jpg)
+## 1. 2  [Wireframes ](/wireframes-images/wireframes.jpg)
+[See Wireframes ](/wireframes-images/wireframes.jpg)
  
-These wireframes where designed  with [Figma](https://www.figma.com/)
+These wireframes where designed  with [Figma](https://www.figma.com/file/x4m6WQpYOvB8l1EB9EikFm/Untitled?node-id=0%3A1)
 which is a very instuitive prototyping tool that focuses in the user interface and user experience design.
 
 ## 1.3. Design
 
-This website was designed thinking on a minimalist 
-A concept which transmits serenity and tranquillity. Therefore, all pages are diaphanous but functional, avoiding the overuse of colors which could be stressful  and overwhelming for the users.
-Hence, black, white and gray are the predominant colors.
-- The font: 
-Regarding the font "Oswald" and "Roboto" were used due to the perfect contrast, they offer making the site look clean and ordered. 
-- Colors:
-   - Rgba (7, 7, 7, 0.1) 
-   - Rgba (255,255,255,0.1)
-    - #fafafa (Font color)
-    - #1e1e1e (Drop menu)
-    - #5c5a5a (Navigation bar hover)
+This website was designed using [Heroic Features](https://startbootstrap.com/template/heroic-features)
+A basic Bootstrap home page template from [startboostrap](https://startbootstrap.com/).
+this template was chosen thinking on a minimalist 
+concept which transmits serenity and tranquillity. Therefore, all pages are diaphanous but functional, avoiding the overuse of colors which could be stressful  and overwhelming for the users.
+Hence, black and  white are the predominant colors. although there are some other colors such as yellow , red and blue in puntual ellements as bottoms and icons. 
+- The Font used was the one preset in the template: 
+font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     
        Note: 
     - Even though, there seem to be a wider range of color on the website it is due to the different opacity scales of some of these colors. 

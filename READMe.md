@@ -49,7 +49,8 @@ A basic Bootstrap home page template from [startboostrap](https://startbootstrap
 this template was chosen thinking on a minimalist 
 concept which transmits serenity and tranquillity. Therefore, all pages are diaphanous but functional, avoiding the overuse of colors which could be stressful  and overwhelming for the users.
 Hence, black and  white are the predominant colors. although there are some other colors such as yellow , red and blue in puntual ellements as bottoms and icons. 
-- The Font used was the one preset in the template: 
+- The Font used was the one preset in the template:
+ 
 font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     

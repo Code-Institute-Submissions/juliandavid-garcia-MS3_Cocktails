@@ -1,50 +1,39 @@
 
 ![Cocktail Bible](/Readme-images/responsive.png)
-# Personal Portfolio
+# Cocktail Bible
 
-This portfolio collects examples of the different projects I have developed during my formation as full stack software developer, at the code institute. 
-Therefore, recruiters and potential clients can have evidence of my skills as a developer and also as a graphic designer, since some compositions made with photoshop were added. 
-- [Visite Site ](https://juliandavid-garcia.github.io/First_milestone_project/)
-
-
+The aime of this site is to  share no only to cocktail lovers, but any person interested in cocktails, the best cocktail recipes from all around  the world. 
+Here users have the chance to find,  add, edit their own cocktails and share them with  the world. 
+- [Visite Site ](https://flask-cocktail-bible.herokuapp.com/get_cocktails)
 
 
- 
 ##  1. UX
-This website is specially addressed to contact  web developer recruiters and possible clients.
-In order to show them my skills through the different websites I have built up until now. 
- 
 
-As I want this Portfolio to be reached by  many recruiters as possible, I paid special attention to titling  and  the descriptive tagging of the “alt attribute” in images,  as to make it more visible to search engines. 
 
-To let the recruiters interact with the examples displayed, all examples have a short description of the technology used as well as links to Github on a _blank page.
+This website is specially addressed to cocktail lovers and any person who wants to learn to make a good cocktail.
 
-To facilitate the interaction with recruiters, a form and a text area are included; as well as the chance to download the Cv, in cases, recruiters require one cv to add to their data base. 
-
+As i want the site to be intuitive for the user all recipes are sorted by categories which can help user find their recipes easier. 
 
 
 ## 1.1 User Story: 
-### As a recruiter I want to:
+### As a user I want to:
 
-- Have access to examples of projects that the developer has built.
+- Have access to all recipes displayed in the website
 
-- See the developer's skills
+- See the ingredients and preparation of the cocktails
 
-- Interact with the examples given but the developer 
+- Find easily the different recipes
 
-- Have direct contact with the developer  
+- Add my own recipes  
 
-- Reach the developer through his social media channels
+- Edit my own recipes
 
-- know about his educational background. 
+- Delete my own recipes if needed
 
 - To move easly and intutively
 
-- Find easy what i am looking for. 
+- Register and login to have my personalized profile
 
-Developers goals: 
-
-- Attract  as many  recruiters and clients as possible.
 
 
 ## 1. 2  [Wireframes ](/wiframes-images/wiframes.jpg)

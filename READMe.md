@@ -48,49 +48,48 @@ This website was designed using [Heroic Features](https://startbootstrap.com/tem
 A basic Bootstrap home page template from [startboostrap](https://startbootstrap.com/).
 this template was chosen thinking on a minimalist 
 concept which transmits serenity and tranquillity. Therefore, all pages are diaphanous but functional, avoiding the overuse of colors which could be stressful  and overwhelming for the users.
-Hence, black and  white are the predominant colors. although there are some other colors such as yellow , red and blue in puntual ellements as bottoms and icons. 
+Hence, black and  white are the predominant colors. although there are some other colors such as yellow , red and blue in puntual elements as bottoms and icons. 
 - The Font used was the one preset in the template:
  
 font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     
-       Note: 
-    - Even though, there seem to be a wider range of color on the website it is due to the different opacity scales of some of these colors. 
 
 
 ## 2. Features
 
 ### 2.1. Existing features
 
- The User can find all the features of this page attached to the navigation bar. These features are accessible on every page of the website. Therefore, all of them are interconnected, letting the user move around the pages no matter his/her location. 
+
+ 
 
 ### 2.1.1 Home:
 
 This feature is the main page of the site.
-Here users will come across with a header with the developer's name and a navigation bar that links to all the features available on the site.  It also counts with a hero image which introduces the developer to the visitors. Furthermore, in this page there is a section called  **about me** which consist of two paragraphs located below the hero image here the user is introduced to what they are going to find in the web side. 
+Here users will come across with all the recipes, sorted out by the different types of alcohol each cocktail uses. Besides user can find in the navigation-bar the option to register and login in order to have access to more features. Moreover, Users can also use the search-bar to speed up the search of a recipe. 
+
+
 
 ### 2.1.2 Navigation bar:  
-Located in the top of the image contains the different sections of the website displayed on devices up to 576 PX
- Navigation buttons:  This is the navigation option displayed on devices smaller than 576 PX.
+This website has a navigation bar that displays different features depending on the actions te user takes. if a user registers and logs in, then the features from the navigation bar will be different from those who do not do it. A fisrt time visitor will only find in the Nabvar the chance to register and login. And if they create an account the Navbar will display also the options to add a recipe, log out or user profile. 
         
 
 
-### 2.1.3 Contact:
- This feature can be reached through the navigation bar/buttons. Here the user  has the information and tools required to reach the developer. Telephone number, E-mail, and a text box for the user to write directly to the developer.
+### 2.1.3 Register:
+On this feature users can create an account adding a user name and a password 
 
-### 2.1.4 Social media: 
-Is located in the footer.
-Here all the icons are  linked  to its corresponding website and can be accessible from any of the different pages of the site.
+### 2.1.4 Log In: 
+Through this feature user access to the content reserved to those who have an account. Thus, the members can add, edit and delete their own recipes.
 
-### 2.1.5 Resume: 
-Is a downloadable file with all my personal information. Education, work experience, E-mail, telephone, and address. 
+### 2.1.5 Profile: 
+Is a page with some information from the user. Here the user finds a list with the cocktails added by him/her. Having the option to edit, or delete them.   
 
-### 2.1.6 Skills:
- In this section the users can find all my technical capabilities as a developer illustrated with graphics. Thus, the recruiter can have an idea of how much I  know about the  technologies I have learned. 
+### 2.1.6 log Out:
+ When cliking on this option the user leaves his/her account, having access only to the home page.  
 
 ### 2.2 Features left to implement in the future
- - In the future, I would like to add some notification message once the message has been sent. 
- _ I would like to add a section where  people can share their experience after having worked with me.  
+ - In the future, I would like to add a section where visitors can leave reviews of the cocktails.  
+- i would also like to add pictures to each of the recipes. 
 
 
 
@@ -106,7 +105,7 @@ This website was built using:
 - [Figma](http://figma.com/) **Figma** used to creat a wireframe or mock-up 
 - [Photoshop](http://photoshop.com/) **Photoshop** used to edit the images used in the page. 
 - [Responsivedesign](http://ami.responsivedesign.is/) **Responsive Design** to show how it looks in defferent devices. 
-- [Hover.css](https://ianlunn.github.io/Hover/) **hover** used to add the hover effect to the example images. 
+- [Startbootstrap](https://startbootstrap.com/template/heroic-features) **hover** used to add the hover effect to the example images. 
 
 
 

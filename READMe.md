@@ -155,18 +155,34 @@ This website was built using:
 - [Deployed site address](https://juliandavid-garcia.github.io/MS3_Cocktails/)
 
 ## 6. To clon the repository using GitHub Desktop
-- On GitHub, navigate to the main page of the repository.
+- **Download and install GitHub Desktop**
 
+ [Download GitHub Desktop](https://desktop.github.com/)
+
+**Open github**
+![Github.com](/Readme-images/github.png)
+
+- **Open juliandavid-garcia/MS3_Cocktails**
+![Repository](/Readme-images/respository.png)
 
 - Click on the button "Code"
+![code](/Readme-images/code.png)
 
-![code](/Readme-images/code-button.png)
-- Select "Open with GitHub Desktop" to clone and open the respository with GitHub Desktop.
+- Select "Open with GitHub Desktop" to clone
+ and open the respository with GitHub Desktop.
 
-![Desktop](/Readme-images/Desktop.png)
+![Desktop](/Readme-images/desktop.png)
 
-- Go to Github main page and you will find a new depository. thas your cloned despository. 
-- You have the Repository cloned. 
+- Allow Github desktop to open the file you want to clone
+
+![Allow](/Readme-images/allow.png)
+
+-Choose where you want to save your clone file
+
+![Allow](/Readme-images/path.png)
+
+
+
 
 
 

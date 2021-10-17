@@ -197,8 +197,33 @@ This website was built using:
 - **Go to deploy**
 ![folder name](/Readme-images/deply.png)
 
- **As a deployment method select GitHub "Connect to GitHub**
+ - **As a deployment method select GitHub "Connect to GitHub**
 ![folder name](/Readme-images/deplo_heroku.png)
+
+ - **Search your github account and select the repository you want to clone**
+![folder name](/Readme-images/repository_name.png)
+
+- **Click on "Conect"**
+![folder name](/Readme-images/conect.png)
+
+- **Go to settings and scrolldown until "Config Vars" section and  click on the "Reveal Config Vars" button**
+![folder name](/Readme-images/reveal.png)
+
+- **Fill in the form with the date from the env.py file you have in your repository**
+![folder name](/Readme-images/fill_in.png)
+
+- **Return to the deploy section, selecte the branch main and enable automatic deploys**
+![folder name](/Readme-images/automatic_deploy.png)
+
+- **Finally clock on the "Deploy Branch" to deploy the site**
+![folder name](/Readme-images/deploy_branch.png)
+
+- [Deployed site address](https://flask-cocktail-bible.herokuapp.com/)
+
+
+
+
+
 
 
 

@@ -87,6 +87,13 @@ Is a page with some information from the user. Here the user finds a list with t
 ### 2.1.6 log Out:
  When cliking on this option the user leaves his/her account, having access only to the home page.  
 
+ ### 2.1.7 Add a Cocktail:
+All registered users have the chance to add new cocktails to the page through a form linked to the dababase in order to keep it updated. 
+
+ ### 2.1.8 Search bar:
+In order to help users to easily find  a recipe or just an ingrediente amongst all recipes there is a search bar located in the header of the home page in which they can type the term needed and  it will be filtered and displayed in  the screen.
+ ### 2.1.9 Edit Cockatil:
+Users have the chance to edit the cocktails they added thought a edit button located in their profile page. This edit button will lead the user to a prefilled form which can be easily updated.
 ### 2.2 Features left to implement in the future
  - In the future, I would like to add a section where visitors can leave reviews of the cocktails.  
 - i would also like to add pictures to each of the recipes. 
@@ -105,9 +112,14 @@ This website was built using:
 - [Figma](http://figma.com/) **Figma** used to creat a wireframe or mock-up 
 - [Photoshop](http://photoshop.com/) **Photoshop** used to edit the images used in the page. 
 - [Responsivedesign](http://ami.responsivedesign.is/) **Responsive Design** to show how it looks in defferent devices. 
-- [Startbootstrap](https://startbootstrap.com/template/heroic-features) **hover** used to add the hover effect to the example images. 
-
-
+- [Startbootstrap](https://startbootstrap.com/template/heroic-features) **Startbootstrap** html and css template used to build the front-end
+ - [Materialized](https://materializecss.com/) **Materialized** A modern responsive front-end framework based on Material Design
+ - [Flask](https://flask.palletsprojects.com/en/2.0.x/) **Flask** 
+ is a web framework. tahts provides tools, libraries and technologies that allows to build a web application. 
+ - [Python](https://www.python.org/) **Python** is a computer programming language used to build websites and software, automate tasks, and conduct data analysis.
+ - [JavaScript](https://www.javascript.com/) **JavaScript** is a text-based programming language used both on the client-side and server-side that allows you to make web pages interactive 
+- [Heroku](https://www.heroku.com/) **Heroku** is use to deploy, manage, and scale modern apps.
+- [Mongodb](https://www.mongodb.com/)**MongoDB** is a cloud database
 
 ## 4. Testing
  
@@ -118,17 +130,29 @@ This website was built using:
 
 ## 5. Deployment
 - **Open github**
-- **Open workspace/First_milestone_project and go to setting.**
+![Github.com](/Readme-images/github.png)
 
+- **Open juliandavid-garcia/MS3_Cocktails**
+![Repository](/Readme-images/respository.png)
+
+- **Go to settings.**
 ![setting](/Readme-images/settings.png)
-- **Open setting and scrolled down until Github Pages**
 
-- **Click on the None dropdowmenu and select the branch to publish : master**
+- **Open setting and scrolled down until Github Pages and ckicl on "Check it out here!"**
+![pages](/Readme-images/pages.png)
 
-![pages](/Readme-images/branches.png)
+
+- **Click on the None dropdowmenu and select the branch to publish : main**
+![pages](/Readme-images/main.png)
+
+
 -  **Click save**
+![Save](/Readme-images/save.png)
+
 - **The website is now deployed.**
-- [Deployed site address](https://juliandavid-garcia.github.io/First_milestone_project/)
+![Save](/Readme-images/deployed.png)
+
+- [Deployed site address](https://juliandavid-garcia.github.io/MS3_Cocktails/)
 
 ## 6. To clon the repository using GitHub Desktop
 - On GitHub, navigate to the main page of the repository.

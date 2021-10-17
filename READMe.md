@@ -129,6 +129,7 @@ This website was built using:
   
 
 ## 5. Deployment
+### **5.1 Github deployment and cloning**
 - **Open github**
 ![Github.com](/Readme-images/github.png)
 
@@ -165,21 +166,40 @@ This website was built using:
 - **Open juliandavid-garcia/MS3_Cocktails**
 ![Repository](/Readme-images/respository.png)
 
-- Click on the button "Code"
+- **Click on the button "Code"**
 ![code](/Readme-images/code.png)
 
-- Select "Open with GitHub Desktop" to clone
- and open the respository with GitHub Desktop.
+- **Select "Open with GitHub Desktop" to clone
+ and open the respository with GitHub Desktop.**
 
 ![Desktop](/Readme-images/desktop.png)
 
-- Allow Github desktop to open the file you want to clone
+- **Allow Github desktop to open the file you want to clone**
 
 ![Allow](/Readme-images/allow.png)
 
--Choose where you want to save your clone file
+- **Choose where you want to save your cloned file**
 
-![Allow](/Readme-images/path.png)
+![path](/Readme-images/path.png)
+
+- **Give a name to your cloned file.**
+
+![folder name](/Readme-images/destination.png)
+
+- **Go to the archive where you decided to save your cloned document and you will have your cloned document there..**
+
+![Cloned](/Readme-images/cloned.png)
+
+### 5.2 **Heroku deployment**
+- **Go to Heroku.com, log in and choose the project you want to deploy**
+![folder name](/Readme-images/Projecto.png)
+
+- **Go to deploy**
+![folder name](/Readme-images/deply.png)
+
+ **As a deployment method select GitHub "Connect to GitHub**
+![folder name](/Readme-images/deplo_heroku.png)
+
 
 
 

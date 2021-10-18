@@ -10,6 +10,10 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+
+ .title_form{
+   margin-top: 20px;
+ }
  #icon2{
   background-color:#ba8a56;
 }

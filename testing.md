@@ -60,7 +60,6 @@ As illustrated in the image below, this website has been tested in all devices  
 
 
 ![Home](Readme-images/home_register.PNG)
-![Register/login](Readme-images/table-0.png)
 ![profile](Readme-images/perfil_login.PNG)
 ![add a cocktail](Readme-images/add_edit.PNG)
 ![edit a cocktail](Readme-images/edit_add.PNG)
@@ -71,39 +70,35 @@ As illustrated in the image below, this website has been tested in all devices  
 ## Bugs ##
 
 ### Bug 1. ###
-- 
+- Following the suggestion given in one of the videos, the ingredients section in mongodb was set in array. However, when the user tryed to add ingredients there were a group of characters which changed the text in this section. Therefore. I changed this option to string and the problem desappeard 
 
 ### Bug 2. ###
--
+- 
 
 ### Bug 3. ###
 - 
 
 
 ## Testing users' stories ##
-### As a guest I want to:
-- **Find the address of the apartment**
-  - If you check the map you can find the location of the flat. However, the exact address is given to the guest when the reservation is confirmed 
+### As a user I want to:
+- **Have access to all recipes displayed in the website**
+  - Any visitor of the website  have access to all the recipes posted on the site.
 
-- **See images of the apartment**
-  - In the Gallery section people can have access to all the images of the apartment 
-- **Find the instruction on how to arrive to the flat**
-  - Following the google maps direction people can arrive to the flat easily.
-- **See the amenities provided** 
-  - In the section Amenities people can find a list of the most outstanding services found in the flat
-- **Make a reservation** 
-  -  People can contact the flat manager in order to set a reservation or can also make direct reservation through the airb&b wesite which is linked to the site. 
-- **Have direct contact with the owner of the flat.** 
-  - There is a contact form for people to reach the flats owner in order to ask questions or make direct reservations
-- **Spot on a map the location of the flat and places of intrest ATMs, Supermarkets, etc..**
-  - In the map provided in the site people can find relevant information for the visitors such as the supermakets, banks and even the location of the flat
-- **Check the public transportation availability.** 
-  - User can find in the map where are the bustops closes to the flat and which are the routes that take you there. 
-- **have access to its social media**
+- **See the ingredients and preparation of the cocktails**
+  - when clicking on any of the recipes the user will be display all the information regarding that cocktail. 
+- **Find easily the different recipes**
+  - In order to help the user to find the cocktails easily, the recipes are clasified and displayed to the user by the different alcohol categories they belong to. Also the site has a search-bar that makes the process of finding cocktails  easier. 
+- **Add my own recipes** 
+  - When a user registers in the site has the posibility of adding  new recipes to the page.
+- **Edit my own recipes** 
+  -  The user also has  the chance to edit and erase only those recipes that he/she added 
+- **Delete my own recipes if needed** 
+  - From their profile page the users can find a button to erase the recipes added by themselves
+- **To move easly and intuitively**
+  - All pages of the site are interconnected. Therefore, users can move around the different section of the site through the menu buttons. 
+- **Register and login to have my personalized profile.** 
+  - In order to manage the cocktail recipes only registered user can find a profile page where he/she can administrate their own cocktails.  
+
   
-  - In the footer the user can find all the links to the social media of the apartment.
-    
-    - [Instagram](https://www.instagram.com/)
-    - [Airb&b](https://www.airb&b.com/)
-   
+  
  

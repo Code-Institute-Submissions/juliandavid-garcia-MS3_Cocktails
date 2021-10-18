@@ -59,20 +59,25 @@ As part of the testing process this website was tested using:
 As illustrated in the image below, this website has been tested in all devices  available in the Google chrome Developer tool. The results are the followings:
 
 
-![responsiveness](Readme_images/table-0.png)
+![Home](Readme-images/home_register.PNG)
+![Register/login](Readme-images/table-0.png)
+![profile](Readme-images/perfil_login.PNG)
+![add a cocktail](Readme-images/add_edit.PNG)
+![edit a cocktail](Readme-images/edit_add.PNG)
 
 
-As we can see the website responds effectively in all devices. However, in the desktop version theres is an undesired right-margin in the landing page which still need to be investigated in order to be removed
+
+
 ## Bugs ##
 
 ### Bug 1. ###
-- There is a right margin that cant be removed in the sections that contains the carousel from boostrap.
+- 
 
 ### Bug 2. ###
-- When restricting the google API my map does not work
+-
 
 ### Bug 3. ###
-- In devices  with a width smaller than 780px, the user need to zoon the screen out in order to fit the size of the image to the screen. 
+- 
 
 
 ## Testing users' stories ##

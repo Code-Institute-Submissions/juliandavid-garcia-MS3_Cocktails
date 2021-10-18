@@ -241,14 +241,19 @@ In order to display the recipes collapsible boxes taken from materializedcss:
  The data base used fot his porject was mongodb :
  - [Mongodb](https://www.mongodb.com/)
 
-## 8. Media
-The photos used in this site were obtained from :
+ The search bar was built using materializedcss form :
+ - [Search bar](https://materializecss.com/text-inputs.html)
 
-- [Unsplash](https://unsplash.com/photos/-EvvsegVoUE)
+
+## 8. Media
+The photo used in this site was obtained from :
+
+- [Unsplash](https://unsplash.com/photos/MzsWrM8DSCU)
 
 ## 9. Acknowledgements
 
-- I received inspiration for this project from the previous exercises made during the course. Specially, from the Love-running and Whiskey lovers examples. 
+- I received inspiration for this project from the previous miniproject(task-manager) covered in the previous unit.
+
 - Thanks to Precious Ijege for his mentoring while developing this project. His advices, patience and support were of high relevance to carry out this project. 
 
 

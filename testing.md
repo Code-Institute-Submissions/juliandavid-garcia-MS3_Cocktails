@@ -53,12 +53,8 @@ As part of the testing process this website was tested using:
 
  ## Responsiveness ##
 
-
-This website is responsive. Consequently, it has been developed to  be displayed on any device. 
-The main changes users can evidence when accessing the site on a different device are:
-On devices up to 576 PX  there is not Carousel display in the landing page. 
-
-
+ This website is responsive since it was built using the front-end template "Heroic Features"  from Start Bootstrap. A Bootstrap home page template featuring a hero unit and a grid of thumbnail features
+ Consequently, it has been developed to  be displayed on any device. 
 
 As illustrated in the image below, this website has been tested in all devices  available in the Google chrome Developer tool. The results are the followings:
 

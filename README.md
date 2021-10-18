@@ -113,7 +113,7 @@ This website was built using:
 - [Photoshop](http://photoshop.com/) **Photoshop** used to edit the images used in the page. 
 - [Responsivedesign](http://ami.responsivedesign.is/) **Responsive Design** to show how it looks in defferent devices. 
 - [Startbootstrap](https://startbootstrap.com/template/heroic-features) **Startbootstrap** html and css template used to build the front-end
- - [Materialized](https://materializecss.com/) **Materialized** A modern responsive front-end framework based on Material Design
+ - [materializecss](https://materializecss.com/) **Materialized** A modern responsive front-end framework based on Material Design
  - [Flask](https://flask.palletsprojects.com/en/2.0.x/) **Flask** 
  is a web framework. tahts provides tools, libraries and technologies that allows to build a web application. 
  - [Python](https://www.python.org/) **Python** is a computer programming language used to build websites and software, automate tasks, and conduct data analysis.
@@ -223,28 +223,23 @@ This website was built using:
 
 
 
-
-
-
-
-
-
-
-
 ## 7. Credits:
-The Drop down menu used for the devices up to 576px was taken from [w3schools :](www.w3schools.com)
+The front-end of this website was built based on the template Heroic Features from [startbootstrap](https://startbootstrap.com/template/heroic-features)
 
-- [Dropdown menu](https://getbootstrap.com/docs/4.1/components/dropdowns/)
+- [Html and css Template](https://startbootstrap.com/template/heroic-features)
 
-The form was built following [Bootstrap](www.Bootstrap.com):
+The forms used to add and edit the recipes were built using features from materialized [materializecss](https://materializecss.com/select.html) :
 
-- [Form](https://getbootstrap.com/docs/5.0/forms/form-control/)
+- [Form](https://materializecss.com/select.html)
 
 The icons where taken from:
 - [Font awesome](https://fontawesome.com/icons)
 
-The hover effect used in the portfolio images was taken from : 
- - [Hover.css](https://ianlunn.github.io/Hover/)
+In order to display the recipes collapsible boxes taken from materializedcss: 
+ - [Materializecss](https://materializecss.com/collapsible.html)
+
+ The data base used fot his porject was mongodb :
+ - [Mongodb](https://www.mongodb.com/)
 
 ## 8. Media
 The photos used in this site were obtained from :

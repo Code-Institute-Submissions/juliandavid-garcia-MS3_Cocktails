@@ -50,14 +50,37 @@
                 </div>
                 <div class="row">
                     <div class="col s12 center-align">
-                        <a href="{{ url_for('get_cocktails') }}" class="btn-large red waves-effect waves-black text-shadow">
+                        <a href="{{ url_for('get_cocktails') }}" class="btn-large bg-dark dark-1 waves-effect waves-black text-shadow">
                             Cancel <i class="fas fa-times-circle right"></i></a>
                         <button class="btn-large waves-effect waves-black white text-shadow black-text bold" type="submit">
                             <strong>Edit</strong>
                             <i class="fas fa-edit"></i>
                         </button>
+                        <a href="exampleModal" class="btn-large red waves-effect waves-black text-shadow" data-toggle= "modal" data-target="#exampleModal">
+                            Delete<i class="fas fa-times-circle right"></i></a>
                     </div>
                 </div>
+                <!-- Button trigger modal -->
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title black-text" id="exampleModalLabel">Be Careful</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body black-text">
+          Are you sure you want to delete this cocktail?
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <a href="{{ url_for('delete_cocktail',cocktail_id=cocktail._id)}}" class="btn btn-warning">I had never been so sure!</a>
+        </div>
+      </div>
+    </div>
+  </div>
             </form>
         </div>
 

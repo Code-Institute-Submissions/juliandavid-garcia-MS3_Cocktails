@@ -150,7 +150,7 @@ def edit_cocktail(cocktail_id):
 @app.route("/delete_cocktail/<cocktail_id>")
 def delete_cocktail(cocktail_id):
     mongo.db.cocktails.remove({"_id":ObjectId(cocktail_id)})
-    flash("Task successfull Deleted")
+    flash("Cocktail successfully Deleted")
     return redirect( url_for("get_cocktails"))
 
 # ---- ERROR HANDLERS #

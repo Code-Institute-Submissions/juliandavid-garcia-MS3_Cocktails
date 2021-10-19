@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
+{% if session.user %}
 <div class="title_form">
     <h3 class="white-text text-darken-4 center-align">Add A Cocktail</h3>
 </div>
@@ -52,7 +53,7 @@
         </div>
     </form>
 </div>
-
+{% endif %}
 
 
 {% endblock %}

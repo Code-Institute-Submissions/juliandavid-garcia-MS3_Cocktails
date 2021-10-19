@@ -32,40 +32,42 @@
                 aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse bg-black navbar-collapse " id="navbarSupportedContent">
                 <ul class="navbar-nav   ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link" aria-current="page"
+                    <li class="nav-item active"><a class="nav-link" aria-current="page"
                             href="{{ url_for('get_cocktails') }}">Home</a></li>
                     {% if session.user %}
-                    <li class="nav-item"><a class="nav-link" href="{{ url_for('logout') }}">Log out </a></li>
-                    <li class="nav-item"><a class="nav-link"
+                    <li class="nav-item active"><a class="nav-link" href="{{ url_for('logout') }}">Log out </a></li>
+                    <li class="nav-item active"><a class="nav-link"
                             href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ url_for('add_cocktail') }}">Add a Cocktail</a>
+                    <li class="nav-item active"><a class="nav-link" href="{{ url_for('add_cocktail') }}">Add a Cocktail</a>
                     </li>
                     {% else %}
-                    <li class="nav-item"><a class="nav-link" href="{{ url_for('register') }}">Register</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ url_for('login') }}">Log in </a></li>
+                    <li class="nav-item active"><a class="nav-link" href="{{ url_for('register') }}">Register</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="{{ url_for('login') }}">Log in </a></li>
                     {% endif %}
                 </ul>
             </div>
         </div>
     </nav>
+    
     <div class="container px-lg-5">
+        <section id="messages">
+            <!--flash message-->
+            {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                    {% for message in messages %}
+            <div class="row flashes">
+                <h1 class="grey lighten-4  center-align">
+                    {{message}}
+                </h1>
+            </div>
+                    {% endfor%}
+                {% endif %}
+            {% endwith %}
+        </section>
         {% block content %}
         {% endblock %}
     </div>
-    <section>
-        <!--flash message-->
-        {% with messages = get_flashed_messages() %}
-            {% if messages %}
-                {% for message in messages %}
-        <div class="row flashes">
-            <h1 class="grey lighten-4  center-align">
-                {{message}}
-            </h1>
-        </div>
-                {% endfor%}
-            {% endif %}
-        {% endwith %}
-    </section>
+    
     <!-- Footer-->
     <footer class="py-5 bg-dark">
         <div class="container">

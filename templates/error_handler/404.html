@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+
+    <div class="container">
+        <div class="row top">
+            <div class="col s12 m6">
+                <h1 class="center-align white-text top">404 - Page not found </h1>
+                <h2 class="center-align white-text">Sorry, this page can not be found. </h2>
+                <h1 class="center-align white-text top"><a href="{{ url_for('get_cocktails') }}" class="">Go to homepage</a></h1> 
+            </div>
+            <div class="col s12 m6">
+                <iframe src="https://giphy.com/embed/J6DKSSrTUoSqiCuT8Z" width="380" height="480" frameBorder="0" class="giphy-embed" allowFullScreen>
+            </div>       
+        </div> 
+    </div>
+
+{% endblock %}

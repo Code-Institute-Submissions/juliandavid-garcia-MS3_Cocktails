@@ -87,6 +87,8 @@ def login():
 
 @app.route("/profile/<username>", methods=["GET", "POST"])
 def profile(username):
+    if not session.get("user"):
+        return render_template("error_handler/404.html")
     cocktails = list(mongo.db.cocktails.find())
 
     # grab the session user's username from db
@@ -108,6 +110,8 @@ def logout():
 
 @app.route("/add_cocktail", methods=["GET", "POST"])
 def add_cocktail(): 
+    if not session.get("user"):
+        return render_template("error_handler/404.html")
     if request.method == "POST":
     
         cocktail = {
@@ -127,6 +131,7 @@ def add_cocktail():
 
 @app.route("/edit_cocktail/<cocktail_id>", methods=["GET", "POST"])
 def edit_cocktail(cocktail_id):
+    
     if request.method == "POST":
         submit = {
             "category_name": request.form.get("category_name"),
@@ -147,6 +152,22 @@ def delete_cocktail(cocktail_id):
     mongo.db.cocktails.remove({"_id":ObjectId(cocktail_id)})
     flash("Task successfull Deleted")
     return redirect( url_for("get_cocktails"))
+
+# ---- ERROR HANDLERS #
+@app.errorhandler(404)
+def not_found(e):
+    return render_template("error_handler/404.html"), 404
+
+
+@app.errorhandler(500)
+def server_error(e):
+    return render_template("error_handler/500.html"), 500
+
+
+
+@app.errorhandler(403)
+def forbidden(e):
+    return render_template("error_handler/403.html"), 403
 
 
 if __name__=="__main__":

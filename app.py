@@ -53,6 +53,8 @@ def register():
         # put the new user into 'session' cookie
         session["user"] = request.form.get("username").lower()
         flash("Now Your Are One Of Us! Your Registration is Successful!")
+        return redirect(url_for(
+                            "profile", username=session["user"]))
     return render_template("register.html")
 
 @app.route("/login", methods=["GET", "POST"])
@@ -95,8 +97,6 @@ def profile(username):
         return render_template("profile.html", cocktails=cocktails,username=username)
     
 
-    
-    
 @app.route("/logout")
 def logout():
     # remove user from session cookie

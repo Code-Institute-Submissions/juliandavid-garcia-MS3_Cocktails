@@ -155,7 +155,7 @@ This website was built using:
 
 - [Deployed site address](https://juliandavid-garcia.github.io/MS3_Cocktails/)
 
-## 6. To clon the repository using GitHub Desktop
+## 5.2. To clon the repository using GitHub Desktop
 - **Download and install GitHub Desktop**
 
  [Download GitHub Desktop](https://desktop.github.com/)
@@ -190,7 +190,7 @@ This website was built using:
 
 ![Cloned](/Readme-images/cloned.png)
 
-### 5.2 **Heroku deployment**
+### 5.3 **Heroku deployment**
 - **Go to Heroku.com, log in and choose the project you want to deploy**
 ![folder name](/Readme-images/Projecto.png)
 
@@ -223,7 +223,7 @@ This website was built using:
 
 
 
-## 7. Credits:
+## 6. Credits:
 The front-end of this website was built based on the template Heroic Features from [startbootstrap](https://startbootstrap.com/template/heroic-features)
 
 - [Html and css Template](https://startbootstrap.com/template/heroic-features)
@@ -245,18 +245,18 @@ In order to display the recipes collapsible boxes taken from materializedcss:
  - [Search bar](https://materializecss.com/text-inputs.html)
 
 
-## 8. Media
+## 7. Media
 The photo used in this site was obtained from :
 
 - [Unsplash](https://unsplash.com/photos/MzsWrM8DSCU)
 
-## 9. Acknowledgements
+## 8. Acknowledgements
 
 - I received inspiration for this project from the previous miniproject(task-manager) covered in the previous unit.
 
 - Thanks to Precious Ijege for his mentoring while developing this project. His advices, patience and support were of high relevance to carry out this project. 
 
 
-- ## Github
+- ## 9. Github
 You can find this project on 
 [My Github](https://github.com/juliandavid-garcia)

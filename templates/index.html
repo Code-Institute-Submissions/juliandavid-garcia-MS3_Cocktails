@@ -14,32 +14,36 @@
                     <button id="icon" type="submit" class="white btn text-shadow">
                         <i class="fas fa-search left"></i>
                     </button>
-                    <a href="{{ url_for('get_cocktails') }}" id="icon2" class="btn text-shadow bg-gradient"><i class="fas fa-sync-alt"></i></a>
+                    <a href="{{ url_for('get_cocktails') }}" id="icon2" class="btn text-shadow bg-gradient"><i
+                            class="fas fa-sync-alt"></i></a>
                 </div>
             </div>
         </form>
     </div>
 </div>
- <!-- Header-->
- <header class="py-3">
-        <div id="header" class="p-4 p-lg-5 bg-black rounded-3 text-center">
-            <h1 class="display-5 fw-bold">Cocktail Bible</h1>
-            <div class="m-4 m-lg-5">
-                <img src="{{ url_for('static', filename='assets/images/azulmax.jpg')}}">
-                <br>
-                <h3 id="quote" class=""><em>You can’t buy happiness, but you can prepare a cocktail. And that’s kind of the same thing.</em></h3>
-            </div>
+<!-- Header-->
+<header class="py-3">
+    <div id="header" class="p-4 p-lg-5 bg-black rounded-3 text-center">
+        <h1 class="display-5 fw-bold">Cocktail Bible</h1>
+        <div class="m-4 m-lg-5">
+            <img src="{{ url_for('static', filename='assets/images/azulmax.jpg')}}" alt="cocktail">
+            <br>
+            <h3 id="quote" class=""><em>You can’t buy happiness, but you can prepare a cocktail. And that’s kind of the
+                    same thing.</em></h3>
         </div>
+    </div>
 </header>
 
 <!-- Page Content-->
+
 <section class="pt-4">
     <div class="container px-lg-5">
         <div class="row gx-lg-5">
             <div class="col-lg-6 col-xxl-6 mb-5">
                 <div class="card bg-black text-white border-0 h-100">
                     <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
-                        <div class="feature bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="fas fa-glass-whiskey"></i></div>
+                        <div class="feature bg-gradient text-white rounded-3 mb-4 mt-n4"><i
+                                class="fas fa-glass-whiskey"></i></div>
                         <h2 class="fs-4 fw-bold">Whiskey</h2>
                         <!--Materialized collapsed Whiskey-->
                         <ul class="collapsible">
@@ -47,7 +51,7 @@
                             <li>
                                 {% if cocktail.category_name == "Whiskey" %}
                                 <div class="collapsible-header">
-                                  <strong class="text-black">{{ cocktail.cocktail_name }}</strong>
+                                    <strong class="text-black">{{ cocktail.cocktail_name }}</strong>
                                 </div>
                                 <div class="collapsible-body">
                                     <strong>{{ cocktail.cocktail_name }}</strong>
@@ -59,7 +63,7 @@
                                 {% endif %}
                             </li>
                             {% endfor %}
-                          </ul>
+                        </ul>
                         <p class="mb-0"> "Too much of anything is bad. But too much good whiskey is barely enough." </p>
                     </div>
                 </div>
@@ -67,7 +71,8 @@
             <div class="col-lg-6 col-xxl-6 mb-5">
                 <div class="card bg-black text-white border-0 h-100">
                     <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
-                        <div class="feature bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="fas fa-wine-bottle"></i></div>
+                        <div class="feature bg-gradient text-white rounded-3 mb-4 mt-n4"><i
+                                class="fas fa-wine-bottle"></i></div>
                         <h2 class="fs-4 fw-bold">Rum</h2>
                         <!--Materialized collapsed rum-->
                         <ul class="collapsible">
@@ -75,7 +80,7 @@
                             <li>
                                 {% if cocktail.category_name == "Rum" %}
                                 <div class="collapsible-header">
-                                  <strong class="text-black">{{ cocktail.cocktail_name }}</strong>
+                                    <strong class="text-black">{{ cocktail.cocktail_name }}</strong>
                                 </div>
                                 <div class="collapsible-body">
                                     <strong>{{ cocktail.cocktail_name }}</strong>
@@ -87,7 +92,7 @@
                                 {% endif %}
                             </li>
                             {% endfor %}
-                          </ul>
+                        </ul>
                         <p class="mb-0">“There Is a Rum for Everyone, but They Don’t Know It……Yet.”</p>
                     </div>
                 </div>
@@ -95,7 +100,8 @@
             <div class="col-lg-6 col-xxl-6 mb-5">
                 <div class="card bg-black text-white border-0 h-100">
                     <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
-                        <div class="feature bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="fas fa-cocktail"></i></div>
+                        <div class="feature bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="fas fa-cocktail"></i>
+                        </div>
                         <h2 class="fs-4 fw-bold">Vodka</h2>
                         <!--Materialized collapsed Vodka-->
                         <ul class="collapsible">
@@ -103,7 +109,7 @@
                             <li>
                                 {% if cocktail.category_name == "Vodka" %}
                                 <div class="collapsible-header">
-                                  <strong  class="text-black">{{ cocktail.cocktail_name }}</strong>
+                                    <strong class="text-black">{{ cocktail.cocktail_name }}</strong>
                                 </div>
                                 <div class="collapsible-body">
                                     <strong>{{ cocktail.cocktail_name }}</strong>
@@ -115,7 +121,7 @@
                                 {% endif %}
                             </li>
                             {% endfor %}
-                          </ul>
+                        </ul>
                         <p class="mb-0">"Money, like vodka, turns a person into an eccentric."</p>
                     </div>
                 </div>
@@ -123,15 +129,16 @@
             <div class="col-lg-6 col-xxl-6 mb-5">
                 <div class="cardbg-black text-white border-0 h-100">
                     <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
-                        <div class="feature bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="fas fa-glass-cheers"></i></div>
+                        <div class="feature bg-gradient text-white rounded-3 mb-4 mt-n4"><i
+                                class="fas fa-glass-cheers"></i></div>
                         <h2 class="fs-4 fw-bold">Cognac</h2>
-                         <!--Materialized collapsed cognac-->
-                         <ul class="collapsible">
+                        <!--Materialized collapsed cognac-->
+                        <ul class="collapsible">
                             {% for cocktail in cocktails%}
                             <li>
                                 {% if cocktail.category_name == "Cognac" %}
                                 <div class="collapsible-header">
-                                  <strong class="text-black">{{ cocktail.cocktail_name }}</strong>
+                                    <strong class="text-black">{{ cocktail.cocktail_name }}</strong>
                                 </div>
                                 <div class="collapsible-body">
                                     <strong>{{ cocktail.cocktail_name }}</strong>
@@ -140,26 +147,29 @@
                                     <img src="{{cocktail.image}}" alt="">
                                     <p><em>by:{{cocktail.by}}</em></p>>
                                 </div>
+
                                 {% endif %}
                             </li>
                             {% endfor %}
-                          </ul>
-                        <p class="mb-0">"In beer there is freedom, in wine there is health, in cognac there is power and in water there is bacteria." </p>
+                        </ul>
+                        <p class="mb-0">"In beer there is freedom, in wine there is health, in cognac there is power and
+                            in water there is bacteria." </p>
                     </div>
                 </div>
             </div>
             <div class="col-lg-6 col-xxl-6 mb-5">
                 <div class="card bg-black text-white border-0 h-100">
                     <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
-                        <div class="feature bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="fas fa-pepper-hot"></i></div>
+                        <div class="feature bg-gradient text-white rounded-3 mb-4 mt-n4"><i
+                                class="fas fa-pepper-hot"></i></div>
                         <h2 class="fs-4 fw-bold">Tequila</h2>
-                         <!--Materialized collapsed Tequila-->
-                         <ul class="collapsible">
+                        <!--Materialized collapsed Tequila-->
+                        <ul class="collapsible">
                             {% for cocktail in cocktails%}
                             <li>
                                 {% if cocktail.category_name == "Tequila" %}
                                 <div class="collapsible-header">
-                                  <strong class="text-black">{{ cocktail.cocktail_name }}</strong>
+                                    <strong class="text-black">{{ cocktail.cocktail_name }}</strong>
                                 </div>
                                 <div class="collapsible-body">
                                     <strong>{{ cocktail.cocktail_name }}</strong>
@@ -171,7 +181,7 @@
                                 {% endif %}
                             </li>
                             {% endfor %}
-                          </ul>
+                        </ul>
                         <p class="mb-0">"Tequila is like duct tape, it fixes nearly everything." </p>
                     </div>
                 </div>
@@ -179,15 +189,16 @@
             <div class="col-lg-6 col-xxl-6 mb-5">
                 <div class="card bg-black text-white border-0 h-100">
                     <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
-                        <div class="feature bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="fas fa-glass-martini"></i></div>
+                        <div class="feature bg-gradient text-white rounded-3 mb-4 mt-n4"><i
+                                class="fas fa-glass-martini"></i></div>
                         <h2 class="fs-4 fw-bold">Others</h2>
-                         <!--Materialized collapsed Others-->
-                         <ul class="collapsible">
+                        <!--Materialized collapsed Others-->
+                        <ul class="collapsible">
                             {% for cocktail in cocktails%}
                             <li>
                                 {% if cocktail.category_name == "Others" %}
                                 <div class="collapsible-header">
-                                  <strong class="text-black">{{ cocktail.cocktail_name }}</strong>
+                                    <strong class="text-black">{{ cocktail.cocktail_name }}</strong>
                                 </div>
                                 <div class="collapsible-body">
                                     <strong>{{ cocktail.cocktail_name }}</strong>
@@ -199,40 +210,51 @@
                                 {% endif %}
                             </li>
                             {% endfor %}
-                          </ul>
-                        <p class="mb-0">"Childhood is like being drunk, everyone remembers what you did, except you."</p>
+                        </ul>
+                        <p class="mb-0">"Childhood is like being drunk, everyone remembers what you did, except you."
+                        </p>
                     </div>
                 </div>
             </div>
             <div class="col-12 mb-5">
                 <div class="card bg-black text-white border-0 h-100">
                     <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
-                        <div class="feature bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="bi bi-code"></i></div>
-                       <br>
-                       {% if session.user %}
-                       <div class="row">
+                        <div class="feature bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="bi bi-code"></i>
+                        </div>
+                        <br>
+                        {% if session.user %}
+                        <div class="row">
                             <div class="col s12 center-align">
-                                    <a href="{{ url_for('add_cocktail') }}" class="btn-large waves-effect waves-black white text-shadow black-text bold" type="submit"><h2>Add your own Recipe
+                                <a href="{{ url_for('add_cocktail') }}"
+                                    class="btn-large waves-effect waves-black white text-shadow black-text bold"
+                                    type="submit">
+                                    <h2>Add your own Recipe
                                         <i class="fas fa-plus-circle"></i>
-                                    </h2></a>
+                                    </h2>
+                                </a>
                             </div>
                         </div>
                         {% else %}
                         <div class="row">
                             <div class="col s12 center-align">
-                                    <a href="{{ url_for('login') }}" class="btn-large waves-effect waves-black white text-shadow black-text bold" type="submit"><h2>Add your own Recipe
+                                <a href="{{ url_for('login') }}"
+                                    class="btn-large waves-effect waves-black white text-shadow black-text bold"
+                                    >
+                                    <h2>Add your own Recipe
                                         <i class="fas fa-plus-circle"></i>
-                                    </h2></a>
+                                    </h2>
+                                </a>
                             </div>
                         </div>
-                          <p class="">To add a recipe you need to be logged in!</p>
+                        <p class="">To add a recipe you need to be logged in!</p>
                     </div>
                     {% endif %}
                 </div>
             </div>
         </div>
     </div>
+
+
+
 </section>
 {% endblock %}
-
-

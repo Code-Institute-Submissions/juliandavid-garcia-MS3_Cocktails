@@ -117,8 +117,9 @@ def add_cocktail():
         cocktail = {
             "category_name": request.form.get("category_name"),
             "cocktail_name": request.form.get("cocktail_name"),
-            "ingredients": request.form.getlist("ingredients"),
+            "ingredients": request.form.get("ingredients"),
             "preparation": request.form.get("preparation"),
+            "image": request.form.get("image"),
             "by": session["user"]
         }
         mongo.db.cocktails.insert_one(cocktail)
@@ -136,8 +137,9 @@ def edit_cocktail(cocktail_id):
         submit = {
             "category_name": request.form.get("category_name"),
             "cocktail_name": request.form.get("cocktail_name"),
-            "ingredients": request.form.getlist("ingredients"),
+            "ingredients": request.form.get("ingredients"),
             "preparation": request.form.get("preparation"),
+            "image": request.form.get("image"),
             "by": session["user"]
         }
         mongo.db.cocktails.update({"_id":ObjectId(cocktail_id)},submit)

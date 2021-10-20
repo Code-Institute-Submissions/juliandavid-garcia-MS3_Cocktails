@@ -48,6 +48,16 @@
                         <label for="preparation">Preparation</label>
                     </div>
                 </div>
+                 <!-- cocktail Image -->
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="fas fa-camera prefix white-text text-darken-4"></i>
+                        <textarea id="image" name="image" minlength="5" maxlength="400"
+                            class="materialize-textarea validate white-text" required></textarea>
+                        <label for="image">Image</label>
+                    </div>
+                </div>
+                <!-- cocktail buttons -->
                 <div class="row">
                     <div class="col s12 center-align">
                         <a href="{{ url_for('get_cocktails') }}" class="btn-large bg-dark dark-1 waves-effect waves-black text-shadow">

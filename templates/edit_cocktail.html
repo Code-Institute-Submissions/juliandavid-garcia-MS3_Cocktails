@@ -1,97 +1,101 @@
 {% extends "base.html" %}
 {% block content %}
-        <div class="title_form"></div>
-        <h3 class="white-text text-darken-4 center-align">Edit A Cocktail</h3>
+<div class="title_form"></div>
+<h3 class="white-text text-darken-4 center-align">Edit A Cocktail</h3>
 
-        <div class="row card-panel black lighten-1 white-text">
-            <form class="col s12" method="POST" action="{{ url_for('edit_cocktail',cocktail_id=cocktail._id) }}">
-                <!-- category selection -->
-                <div class="row">
-                    <div class="input-field  white-text col s12">
-                        <i class="fas fa-folder-open prefix white-text text-white"></i>
-                        <select id="category_name" name="category_name" class="validate white-text" required>
-                            <option class="white-text" value="" disabled>Choose a Category
-                            </option>
-                            {% for category in categories %}
-                                {% if category.category_name == cocktail.category_name %}
-                            <option class="white-text" value="{{ category.category_name }}" selected>{{category.category_name}}
-                            </option>
-                                {% else %}
-                            <option class="white-text" value="{{ category.category_name }}">{{category.category_name}}</option>
-                                {% endif %}
-                            {% endfor %}
-                        </select>
-                        <label for="category_name">Cocktail Category</label>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="input-field col s12">
-                        <i class="fas fa-cocktail prefix white-text text-darken-4"></i>
-                        <input id="cocktail_name" name="cocktail_name" minlength="5" maxlength="50"
-                            value="{{cocktail.cocktail_name}}" type="text" class="validate white-text" required>
-                        <label for="cocktail_name">Cocktail Name</label>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="input-field col s12">
-                        <i class="fas fa-wine-bottle prefix white-text text-darken-4"></i>
-                        <textarea id="ingredients" name="ingredients" minlength="5" maxlength="200"
-                            class="materialize-textarea validate white-text" required>{{cocktail.ingredients}}"</textarea>
-                        <label for="ingredients">Ingredients</label>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="input-field col s12">
-                        <i class="fas fa-utensil-spoon prefix white-text text-darken-4"></i>
-                        <textarea id="preparation" name="preparation" minlength="5" maxlength="200"
-                            class="materialize-textarea validate white-text" required>{{cocktail.preparation}}</textarea>
-                        <label for="preparation">Preparation</label>
-                    </div>
-                </div>
-                 <!-- cocktail Image -->
-                <div class="row">
-                    <div class="input-field col s12">
-                        <i class="fas fa-camera prefix white-text text-darken-4"></i>
-                        <textarea id="image" name="image" minlength="5" maxlength="400"
-                            class="materialize-textarea validate white-text" required></textarea>
-                        <label for="image">Image</label>
-                    </div>
-                </div>
-                <!-- cocktail buttons -->
-                <div class="row">
-                    <div class="col s12 center-align">
-                        <a href="{{ url_for('get_cocktails') }}" class="btn-large bg-dark dark-1 waves-effect waves-black text-shadow">
-                            Cancel <i class="fas fa-times-circle right"></i></a>
-                        <button class="btn-large waves-effect waves-black white text-shadow black-text bold" type="submit">
-                            <strong>Edit</strong>
-                            <i class="fas fa-edit"></i>
+<div class="row card-panel black lighten-1 white-text">
+    <form class="col s12" method="POST" action="{{ url_for('edit_cocktail',cocktail_id=cocktail._id) }}">
+        <!-- category selection -->
+        <div class="row">
+            <div class="input-field  white-text col s12">
+                <i class="fas fa-folder-open prefix white-text text-white"></i>
+                <select id="category_name" name="category_name" class="validate white-text" required>
+                    <option class="white-text" value="" disabled>Choose a Category
+                    </option>
+                    {% for category in categories %}
+                    {% if category.category_name == cocktail.category_name %}
+                    <option class="white-text" value="{{ category.category_name }}" selected>{{category.category_name}}
+                    </option>
+                    {% else %}
+                    <option class="white-text" value="{{ category.category_name }}">{{category.category_name}}</option>
+                    {% endif %}
+                    {% endfor %}
+                </select>
+                <label for="category_name">Cocktail Category</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <i class="fas fa-cocktail prefix white-text text-darken-4"></i>
+                <input id="cocktail_name" name="cocktail_name" minlength="5" maxlength="50"
+                    value="{{cocktail.cocktail_name}}" type="text" class="validate white-text" required>
+                <label for="cocktail_name">Cocktail Name</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <i class="fas fa-wine-bottle prefix white-text text-darken-4"></i>
+                <textarea id="ingredients" name="ingredients" minlength="5" maxlength="200"
+                    class="materialize-textarea validate white-text" required>{{cocktail.ingredients}}"</textarea>
+                <label for="ingredients">Ingredients</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <i class="fas fa-utensil-spoon prefix white-text text-darken-4"></i>
+                <textarea id="preparation" name="preparation" minlength="5" maxlength="200"
+                    class="materialize-textarea validate white-text" required>{{cocktail.preparation}}</textarea>
+                <label for="preparation">Preparation</label>
+            </div>
+        </div>
+        <!-- cocktail Image -->
+        <div class="row">
+            <div class="input-field col s12">
+                <i class="fas fa-camera prefix white-text text-darken-4"></i>
+                <textarea id="image" name="image" minlength="5" maxlength="400"
+                    class="materialize-textarea validate white-text" required></textarea>
+                <label for="image">Image</label>
+            </div>
+        </div>
+        <!-- cocktail buttons -->
+        <div class="row">
+            <div class="col s12 center-align">
+                <a href="{{ url_for('get_cocktails') }}"
+                    class="btn-large bg-dark dark-1 waves-effect waves-black text-shadow">
+                    Cancel <i class="fas fa-times-circle right"></i></a>
+                <button class="btn-large waves-effect waves-black white text-shadow black-text bold" type="submit">
+                    <strong>Save</strong>
+                    <i class="fas fa-edit"></i>
+                </button>
+                <a href="exampleModal" class="btn-large red waves-effect waves-black text-shadow" data-toggle="modal"
+                    data-target="#exampleModal">
+                    Delete<i class="fas fa-times-circle right"></i></a>
+            </div>
+        </div>
+        <!-- Button trigger modal -->
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title black-text" id="exampleModalLabel">Be Careful</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
                         </button>
-                        <a href="exampleModal" class="btn-large red waves-effect waves-black text-shadow" data-toggle= "modal" data-target="#exampleModal">
-                            Delete<i class="fas fa-times-circle right"></i></a>
+                    </div>
+                    <div class="modal-body black-text">
+                        Are you sure you want to delete this cocktail?
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <a href="{{ url_for('delete_cocktail',cocktail_id=cocktail._id)}}" class="btn btn-warning">I've
+                            never been so sure!</a>
                     </div>
                 </div>
-                <!-- Button trigger modal -->
-  <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title black-text" id="exampleModalLabel">Be Careful</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
+            </div>
         </div>
-        <div class="modal-body black-text">
-          Are you sure you want to delete this cocktail?
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <a href="{{ url_for('delete_cocktail',cocktail_id=cocktail._id)}}" class="btn btn-warning">I've never been so sure!</a>
-        </div>
-      </div>
-    </div>
-  </div>
-            </form>
-        </div>
+    </form>
+</div>
 
 {% endblock %}

@@ -10,16 +10,12 @@ As part of the testing process this website was tested using:
 ## W3C Markup Validator
 
 
-- ## Base page ##
-
-![Base](Readme-images/base.PNG)
-- ## Home page ##
 
 ![Home page](Readme-images/home.PNG)
 
 - ## Add and Edit a cocktail pages ##
 
-![Add/Edit a cocktail](Readme-images/add_cocktail.png)
+![Add/Edit a cocktail](Readme-images/add_cocktail.PNG)
 
 
 - ## Log in and Register  pages ##
@@ -36,8 +32,13 @@ As part of the testing process this website was tested using:
 
 ![CSS](Readme-images/css.PNG)
 
+
 ## Js hint Validator
 ![JavaScript](Readme-images/java_script.PNG)
+
+## pep8 Python Validator
+![Python](Readme-images/python.PNG)
+
 
  This web has been tested in desktop devices using the following browser:
 
@@ -73,8 +74,7 @@ As illustrated in the image below, this website has been tested in all devices  
 - Following the suggestion given in one of the videos, the ingredients section in mongodb was set in array. However, when the user tryed to add ingredients there were a group of characters which changed the text in this section. Therefore. I changed this option to string and the problem desappeard 
 
 ### Bug 2. ###
-- 
-
+- It was not possible to set the modal window in the profile page as it was the first idea.when trying to do so the modal window deleted a different cocktail and not the one i wanted. Therefore, i had to place in the edit page. next to the cancel and save button.  
 ### Bug 3. ###
 - 
 

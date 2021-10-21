@@ -23,6 +23,7 @@
 </div>
 
 <h1 class="fw-bold text-center text-white">Results of your Search </h1>
+{% if cocktails|length > 0 %}
 <!--Materialized collapsed Whiskey-->
 <ul class="collapsible">
     {% for cocktail in cocktails%}
@@ -35,10 +36,14 @@
             </strong>
             <p>{{cocktail.ingredients}}</p>
             <p>{{cocktail.preparation}}</p>
+            <img src="{{cocktail.image}}" alt="">
             <p><em>by:{{cocktail.by}}</em></p>
         </div>
     </li>
     {% endfor %}
 </ul>
+{% else %}
+        <h3 class="red-text text-darken-4 center-align">No Results Found</h3>
+{% endif %}
 <p class="mb-0"></p>
 {% endblock %}

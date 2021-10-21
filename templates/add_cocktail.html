@@ -24,7 +24,7 @@
         <div class="row">
             <div class="input-field col s12">
                 <i class="fas fa-cocktail prefix white-text text-darken-4"></i>
-                <input id="cocktail_name" name="cocktail_name" minlength="5" maxlength="50" type="text"
+                <input id="cocktail_name" name="cocktail_name" minlength="5" maxlength="50" type="text" pattern="^[^\s][A-Za-z0-9\s]{5,50}$"
                     class="validate white-text" required>
                 <label for="cocktail_name">Cocktail Name</label>
             </div>
@@ -33,7 +33,7 @@
         <div class="row">
             <div class="input-field col s12">
                 <i class="fas fa-wine-bottle prefix white-text text-darken-4"></i>
-                <textarea id="ingredients" placeholder="Add the ingrediente separated by comas" name="ingredients" minlength="5" maxlength="200"
+                <textarea id="ingredients" placeholder="Add ingredients separated by comas" name="ingredients" minlength="5" maxlength="200" type="text" pattern="^[^\s][A-Za-z0-9\s]{5,200}$"
                     class="materialize-textarea validate white-text" required></textarea>
                 <label for="ingredients">Ingredients</label>
             </div>
@@ -42,7 +42,7 @@
         <div class="row">
             <div class="input-field col s12">
                 <i class="fas fa-utensil-spoon prefix white-text text-darken-4"></i>
-                <textarea id="preparation" name="preparation" minlength="5" maxlength="200"
+                <textarea id="preparation" name="preparation" minlength="5" maxlength="200" pattern="^[^\s][A-Za-z0-9\s]{5,200}$"
                     class="materialize-textarea validate white-text" required></textarea>
                 <label for="preparation">Preparation</label>
             </div>
@@ -51,9 +51,9 @@
         <div class="row">
             <div class="input-field col s12">
                 <i class="fas fa-camera prefix white-text text-darken-4"></i>
-                <textarea id="image" name="image" minlength="5" maxlength="400"
-                    class="materialize-textarea validate white-text" required></textarea>
+                <input id="image" name="image" type="url" minlength="5"  pattern="https?://.+" class="materialize-textarea validate white-text" required></input>
                 <label for="image">Image</label>
+                <span class="helper-text" data-error="Not a valid URL" data-success="Good"></span>
             </div>
         </div>
         <!-- cocktail buttons -->

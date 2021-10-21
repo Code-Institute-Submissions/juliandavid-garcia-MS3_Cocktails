@@ -2,20 +2,40 @@
 ![Cocktail Bible](/Readme-images/responsive.png)
 # Cocktail Bible
 
-The aime of this site is to  share no only to cocktail lovers, but any person interested in cocktails, the best cocktail recipes from all around  the world. 
-Here users have the chance to find,  add, edit their own cocktails and share them with  the world. 
+The aim of this site is to share not only with cocktail lovers, but any person interested in cocktails, the best cocktail recipes from all around  the world. 
+Here users have the chance to find,  add,  and edit their own cocktail recipes. 
+Therefore, through this website we want to promote the cocktail culuture to help people find new flavors make of cocktail drinking a unique experience. 
+
 - [Visite Site ](https://flask-cocktail-bible.herokuapp.com/get_cocktails)
 
+## Index 
+
+- <a href="#ux">1. User experience (UX)</a>
+  - <a href="#ux-goals">1.1. Project goals</a>
+  - <a href="#User-story">1.2 User stories</a>
+  - <a href="#Wireframes">1.3 Wireframes</a>
+  - <a href="#Design">1.4 Design</a>
+- <a href="#Features">2. Features</a>
+- <a href="#Technologies">3. Technologies used</a>
+- <a href="#Testing">4. Testing</a>
+- <a href="#Deployment">5. Deployment</a>
+- <a href="#Credits">6. Credits</a>
+- <a href="#Media">7. Media</a>
+- <a href="#Acknowledgements">8. Acknowledgements</a>
+- <a href="#Github">9. Acknowledgements</a>
 
 ##  1. UX
+<span id="ux"></span>
+### 1.1 Project goals
+
+- This website is specially addressed to cocktail lovers and any person who want to learn to make good cocktails.
+- Be intuitive for users and easy to navigate.  
+- Be Interactive, so users can read, add, edit, search and delete their recipes.
+- promote the cocktail culture.
 
 
-This website is specially addressed to cocktail lovers and any person who wants to learn to make a good cocktail.
-
-As i want the site to be intuitive for the user all recipes are sorted by categories which can help user find their recipes easier. 
-
-
-## 1.1 User Story: 
+## 1.2 User Story: 
+<span id="User-story"></span>
 ### As a user I want to:
 
 - Have access to all recipes displayed in the website
@@ -36,14 +56,15 @@ As i want the site to be intuitive for the user all recipes are sorted by catego
 
 
 
-## 1. 2  [Wireframes ](/wireframes-images/wireframes.jpg)
+## 1. 3  [Wireframes ](/wireframes-images/wireframes.jpg)
 [See Wireframes ](/wireframes-images/wireframes.jpg)
+<span id="Wireframes"></span>
  
 These wireframes where designed  with [Figma](https://www.figma.com/file/x4m6WQpYOvB8l1EB9EikFm/Untitled?node-id=0%3A1)
 which is a very instuitive prototyping tool that focuses in the user interface and user experience design.
 
-## 1.3. Design
-
+## 1.4. Design
+<span id="Design"></span>
 This website was designed using [Heroic Features](https://startbootstrap.com/template/heroic-features)
 A basic Bootstrap home page template from [startboostrap](https://startbootstrap.com/).
 this template was chosen thinking on a minimalist 
@@ -57,7 +78,7 @@ font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
 
 
 ## 2. Features
-
+<span id="Features"></span>
 ### 2.1. Existing features
 
 
@@ -101,6 +122,7 @@ Users have the chance to edit the cocktails they added thought a edit button loc
 
 
 ## 3. Technologies Used
+<span id="Technologies"></span>
 This website was built using:
 - [HTML](https://html.com) **HTML**is used to create pages and make them functional.
 - [CSS](https://css3.com) **Css** is used to style the page
@@ -122,13 +144,14 @@ This website was built using:
 - [Mongodb](https://www.mongodb.com/)**MongoDB** is a cloud database
 
 ## 4. Testing
- 
+ <span id="Testing"></span>
   - [Results Here](testing.md)
  
 
   
 
 ## 5. Deployment
+<span id="Deployment"></span>
 ### **5.1 Github deployment and cloning**
 - **Open github**
 ![Github.com](/Readme-images/github.png)
@@ -224,6 +247,7 @@ This website was built using:
 
 
 ## 6. Credits:
+<span id="Credits"></span>
 The front-end of this website was built based on the template Heroic Features from [startbootstrap](https://startbootstrap.com/template/heroic-features)
 
 - [Html and css Template](https://startbootstrap.com/template/heroic-features)
@@ -247,16 +271,17 @@ In order to display the recipes collapsible boxes taken from materializedcss:
 
 ## 7. Media
 The photo used in this site was obtained from :
-
+<span id="Media"></span>
 - [Unsplash](https://unsplash.com/photos/MzsWrM8DSCU)
 
 ## 8. Acknowledgements
-
+<span id="Acknowledgements"></span>
 - I received inspiration for this project from the previous miniproject(task-manager) covered in the previous unit.
 
 - Thanks to Precious Ijege for his mentoring while developing this project. His advices, patience and support were of high relevance to carry out this project. 
 
 
 - ## 9. Github
+<span id="Github"></span>
 You can find this project on 
 [My Github](https://github.com/juliandavid-garcia)

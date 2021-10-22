@@ -90,7 +90,13 @@ button in the search box.
 
 **Font-monospace:** SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     
+**Input format**
+All the forms in the page count with some security features to guide the user to introduce the data in a secured and correct way. Therefore, in the **log in** and **resgiter** forms are required to enter a user and passwords with a length of max-15 and min-5 characters. These characters have to be numbers and upper and lower case letters. 
 
+For **Adding and Editing a coktail** users have a max-400 and min-5 characters per filling box. lower and upper cases are allowed as well as special characters. 
+For the Url. users need to add a valid "http//:" url in order to fill the box. 
+
+There were
 <span id="Features"></span>
 ## 2. Features
 ### 2.1. Existing features
@@ -101,12 +107,12 @@ button in the search box.
 ### 2.1.1 Home:
 
 This feature is the main page of the site.
-Here users will come across with all the recipes, sorted out by the different types of alcohol each cocktail uses. Besides user can find in the navigation-bar the option to register and login in order to have access to more features. Moreover, Users can also use the search-bar to speed up the search of a recipe. 
+Here users will come across with all the recipes sorted out by the different types of alcohol each cocktail uses. Besides user can find in the navigation-bar the option to register and login in order to have access to more features. Moreover, Users can also use the search-bar to speed up the search of a recipe. 
 
 
 
 ### 2.1.2 Navigation bar:  
-This website has a navigation bar that displays different features depending on the actions te user takes. if a user registers and logs in, then the features from the navigation bar will be different from those who do not do it. A fisrt time visitor will only find in the Nabvar the chance to register and login. And if they create an account the Navbar will display also the options to add a recipe, log out or user profile. 
+This website has a navigation bar that displays different features depending on the actions te user takes. If a user registers and logs in, then the features from the navigation bar will be different from those who do not do it. A first time visitor will only find in the Nabvar the chance to register and login. And if they create an account the Navbar will display also the options to add a recipe, log out or user profile. 
         
 
 
@@ -117,10 +123,10 @@ On this feature users can create an account adding a user name and a password
 Through this feature user access to the content reserved to those who have an account. Thus, the members can add, edit and delete their own recipes.
 
 ### 2.1.5 Profile: 
-Is a page with some information from the user. Here the user finds a list with the cocktails added by him/her. Having the option to edit, or delete them.   
+Is a page with some information from the user. Here the user finds a list with the cocktails added by him/her. is in this part of the site where users have the option to edit, or delete their own cocktails.   
 
 ### 2.1.6 log Out:
- When cliking on this option the user leaves his/her account, having access only to the home page.  
+ When cliking on this option the user leaves his/her account, having access only to the home page. It means they are not allowed to add, edit or erase any recipe.   
 
  ### 2.1.7 Add a Cocktail:
 All registered users have the chance to add new cocktails to the page through a form linked to the dababase in order to keep it updated. 
@@ -131,7 +137,7 @@ In order to help users to easily find  a recipe or just an ingrediente amongst a
 Users have the chance to edit the cocktails they added thought a edit button located in their profile page. This edit button will lead the user to a prefilled form which can be easily updated.
 ### 2.2 Features left to implement in the future
  - In the future, I would like to add a section where visitors can leave reviews of the cocktails.  
-- i would also like to add pictures to each of the recipes. 
+- I would also like the to let user upload their own pictures 
 
 
 <span id="Technologies"></span>
@@ -160,7 +166,7 @@ This website was built using:
  <span id="Testing"></span>
 ## 4. Testing
 
-  - [Results Here](testing.md)
+  - [Results Here](README.md)
  
 
   

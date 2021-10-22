@@ -7,8 +7,11 @@ As part of the testing process, this website was tested using:
  - [W3C Markup Validator](https://validator.w3.org/) 
  - [Jigsaw W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
 - [Jshint](https://jshint.com/)
+- [Pep8](hhttp://pep8online.com/checkresult) 
+
 ## W3C Markup Validator
 
+When Validating the Html from the website there were a lot of erros but it was beacuse of the ninja tool. To avoid this i validate the site via the url. in this way the interference disappeared and the code was error-free. However, there is a warning suggesting me to use a heading in my base file. Thats why this warning  appears in every page. 
 
 
 ![Home page](Readme-images/home.PNG)
@@ -37,6 +40,7 @@ As part of the testing process, this website was tested using:
 ![JavaScript](Readme-images/java_script.PNG)
 
 ## pep8 Python Validator
+- When validating the python code there is a warning i could not get rid of. It says "no newline at end of file".
 ![Python](Readme-images/python.PNG)
 
 
@@ -76,7 +80,7 @@ As illustrated in the image below, this website has been tested in all devices  
 ### Bug 2. ###
 - It was not possible to set the modal window in the profile page, as it was the first idea. When trying to do so, the modal window deleted a different cocktail and not the one I wanted. Therefore, I had to place in the edit page. Next to the cancel and save button.  
 ### Bug 3. ###
-- when i closed my session in git pop and tried to open my workspace to keep working on my project the env.py file disappeared, i  could not keep working. After a long investigation i discovered that every time you want to access your project, once it has been closed, you need to create again this env.py . The content of this file is :
+- when i closed my session in gitpod and tried to open my workspace to keep working on my project the env.py file disappeared, i  could not keep working. After a long investigation i discovered that every time you want to access your project, once it has been closed, you need to create again this env.py. The content of this file is :
 
 - Import os
 os.environ.setdefault("IP", "Added by developer")
@@ -85,7 +89,7 @@ os.environ.setdefault("SECRET_KEY", "Added by developer")
 os.environ.setdefault("MONGO_URI", "Added by developer")
 os.environ.setdefault("MONGO_DBNAME", "Added by developer")
 
-and the information required to connect to Heroku can be found in your Heroku project. To access this informs you just need to go to setting and click on the "Config Vars button". There you can find  information required in your env.py file. 
+and the information required to connect to Heroku can be found in your Heroku project. To access this inform you just need to go to setting and click on the "Config Vars button", There you can find  information required in your env.py file. 
 Finally, once you had completed the env.py file, you need to type in your terminal window : pip3 freeze -- local > requirements.txt. (The file is needed for Heroku to know which filed to install.)
 
 Once it is done you can keep working on your project. 
@@ -113,6 +117,8 @@ Once it is done you can keep working on your project.
   
 - **Register and login to have my personalized profile.** 
   - In order to manage the cocktail recipes, only registered user can find a profile page where he/she can administrate their own cocktails.  
+
+  - [Return to README](README.md)
 
   
   

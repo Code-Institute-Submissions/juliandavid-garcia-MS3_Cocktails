@@ -3,15 +3,15 @@
 # Cocktail Bible
 
 The aim of this site is to share not only with cocktail lovers, but any person interested in cocktails, the best cocktail recipes from all around  the world. 
-Here users have the chance to find,  add,  and edit their own cocktail recipes. 
-Therefore, through this website we want to promote the cocktail culuture to help people find new flavors make of cocktail drinking a unique experience. 
+Here users have the chance to find, read, add,  and edit their own cocktail recipes. 
+Therefore, through this website we want to promote the cocktail culuture to help people find new flavors and make of cocktail drinking and making a unique experience. 
 
 - [Visite Site ](https://flask-cocktail-bible.herokuapp.com/get_cocktails)
 
 ## Index 
 
 - <a href="#ux">1. User experience (UX)</a>
-  - <a href="#ux-goals">1.1. Project goals</a>
+  - <a href="#Project">1.1. Project goals</a>
   - <a href="#User-story">1.2 User stories</a>
   - <a href="#Wireframes">1.3 Wireframes</a>
   - <a href="#Design">1.4 Design</a>
@@ -22,12 +22,11 @@ Therefore, through this website we want to promote the cocktail culuture to help
 - <a href="#Credits">6. Credits</a>
 - <a href="#Media">7. Media</a>
 - <a href="#Acknowledgements">8. Acknowledgements</a>
-- <a href="#Github">9. Acknowledgements</a>
-
-##  1. UX
+- <a href="#Github">9. 9. Github</a>
 <span id="ux"></span>
+##  1. UX
+<span id="Project"></span>
 ### 1.1 Project goals
-
 - This website is specially addressed to cocktail lovers and any person who want to learn to make good cocktails.
 - Be intuitive for users and easy to navigate.  
 - Be Interactive, so users can read, add, edit, search and delete their recipes.
@@ -63,8 +62,9 @@ Therefore, through this website we want to promote the cocktail culuture to help
 These wireframes where designed  with [Figma](https://www.figma.com/file/x4m6WQpYOvB8l1EB9EikFm/Untitled?node-id=0%3A1)
 which is a very instuitive prototyping tool that focuses in the user interface and user experience design.
 
-## 1.4. Design
 <span id="Design"></span>
+## 1.4. Design
+
 This website was designed using [Heroic Features](https://startbootstrap.com/template/heroic-features)
 A basic Bootstrap home page template from [startboostrap](https://startbootstrap.com/).
 this template was chosen thinking on a minimalist 
@@ -76,9 +76,8 @@ font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     
 
-
-## 2. Features
 <span id="Features"></span>
+## 2. Features
 ### 2.1. Existing features
 
 
@@ -120,9 +119,9 @@ Users have the chance to edit the cocktails they added thought a edit button loc
 - i would also like to add pictures to each of the recipes. 
 
 
-
-## 3. Technologies Used
 <span id="Technologies"></span>
+## 3. Technologies Used
+
 This website was built using:
 - [HTML](https://html.com) **HTML**is used to create pages and make them functional.
 - [CSS](https://css3.com) **Css** is used to style the page
@@ -143,15 +142,16 @@ This website was built using:
 - [Heroku](https://www.heroku.com/) **Heroku** is use to deploy, manage, and scale modern apps.
 - [Mongodb](https://www.mongodb.com/)**MongoDB** is a cloud database
 
-## 4. Testing
  <span id="Testing"></span>
+## 4. Testing
+
   - [Results Here](testing.md)
  
 
   
-
-## 5. Deployment
 <span id="Deployment"></span>
+## 5. Deployment
+
 ### **5.1 Github deployment and cloning**
 - **Open github**
 ![Github.com](/Readme-images/github.png)
@@ -183,7 +183,7 @@ This website was built using:
 
  [Download GitHub Desktop](https://desktop.github.com/)
 
-**Open github**
+- **Open github**
 ![Github.com](/Readme-images/github.png)
 
 - **Open juliandavid-garcia/MS3_Cocktails**
@@ -194,23 +194,18 @@ This website was built using:
 
 - **Select "Open with GitHub Desktop" to clone
  and open the respository with GitHub Desktop.**
-
 ![Desktop](/Readme-images/desktop.png)
 
 - **Allow Github desktop to open the file you want to clone**
-
 ![Allow](/Readme-images/allow.png)
 
 - **Choose where you want to save your cloned file**
-
 ![path](/Readme-images/path.png)
 
 - **Give a name to your cloned file.**
-
 ![folder name](/Readme-images/destination.png)
 
 - **Go to the archive where you decided to save your cloned document and you will have your cloned document there..**
-
 ![Cloned](/Readme-images/cloned.png)
 
 ### 5.3 **Heroku deployment**
@@ -223,7 +218,7 @@ This website was built using:
  - **As a deployment method select GitHub "Connect to GitHub**
 ![folder name](/Readme-images/deplo_heroku.png)
 
- - **Search your github account and select the repository you want to clone**
+ - **Search your github account and select the repository you want to conect**
 ![folder name](/Readme-images/repository_name.png)
 
 - **Click on "Conect"**
@@ -245,9 +240,8 @@ This website was built using:
 
 
 
-
-## 6. Credits:
 <span id="Credits"></span>
+## 6. Credits:
 The front-end of this website was built based on the template Heroic Features from [startbootstrap](https://startbootstrap.com/template/heroic-features)
 
 - [Html and css Template](https://startbootstrap.com/template/heroic-features)
@@ -268,10 +262,9 @@ In order to display the recipes collapsible boxes taken from materializedcss:
  The search bar was built using materializedcss form :
  - [Search bar](https://materializecss.com/text-inputs.html)
 
-
+<span id="Media"></span>
 ## 7. Media
 The photo used in this site was obtained from :
-<span id="Media"></span>
 - [Unsplash](https://unsplash.com/photos/MzsWrM8DSCU)
 
 ## 8. Acknowledgements

@@ -69,11 +69,26 @@ This website was designed using [Heroic Features](https://startbootstrap.com/tem
 A basic Bootstrap home page template from [startboostrap](https://startbootstrap.com/).
 this template was chosen thinking on a minimalist 
 concept which transmits serenity and tranquillity. Therefore, all pages are diaphanous but functional, avoiding the overuse of colors which could be stressful  and overwhelming for the users.
-Hence, black and  white are the predominant colors. although there are some other colors such as yellow , red and blue in puntual elements as bottoms and icons. 
-- The Font used was the one preset in the template:
+Hence, black and  white are the predominant colors. There are also some other colors such as yellow, green, red and blue in puntual elements as bottoms and icons. 
+
+**Colors**
+- Black #000000: used for the page body, collapsible body, and font on the collapsible headers.
+- White #ffffff: used for the Font and collapsible headers background 
+- Black #212121: used for buttons in log in, register pages
+- Green #26a69a: edit buttons in profile page
+- Green #45be74: used for refresh 
+button in the search box.
+- Red #f44336: user for the delete button in the edit form. 
+- yellow #f44336: user for the confirmation button in the modal window
+
+
+
+**Font**
+- The Fonts used was the ones preset in the template.
  
-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+**Font-sans-serif:**  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+**Font-monospace:** SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     
 
 <span id="Features"></span>
@@ -264,8 +279,47 @@ In order to display the recipes collapsible boxes taken from materializedcss:
 
 <span id="Media"></span>
 ## 7. Media
-The photo used in this site was obtained from :
+The photo used in this site as hero image was obtained from :
 - [Unsplash](https://unsplash.com/photos/MzsWrM8DSCU)
+
+Pictures used in the recipes were obtained from the following websites:
+- [**Mojito**: la-cucina.be](https://www.la-cucina.be/sites/default/files/styles/recept-afbeelding/public/mojito.jpg?itok=Lg9_TYKk)
+
+- [**Whiskey sour**: bonappetit.com](https://assets.bonappetit.com/photos/57acc14e53e63daf11a4d9b6/1:1/w_2560%2Cc_limit/whiskey-sour.jpg)
+
+- [**Old Fashioned**: thespruceeats.com](https://www.thespruceeats.com/thmb/fShdgWfPHQDDiytQJo7MGcTmG0s=/960x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/old-fashioned-cocktail-recipe-and-history-759328-hero-01-c9002b3aa6d24a3781befa19dc69eb0e.jpg)
+
+- [**Mint julep**: diffords.com](https://cdn.diffords.com/contrib/stock-images/2020/07/5f0ec1c93c570.jpg)
+
+- [**Smoked & Salted**: diffords.com](https://cdn.diffords.com/contrib/stock-images/2018/05/5af313a25d7fc.jpg)
+
+- [**Piña Colada**: kookmutsjes.com](https://adminwp.kookmutsjes.com/wp-content/uploads/2020/05/Pina-colada-Kookmutsjes.jpg)
+
+- [**Dark-n-Stormy**: nyt.com](https://static01.nyt.com/images/2014/04/23/dining/Dark-n-Stormy/Dark-n-Stormy-articleLarge.jpg)
+
+- [**swizzle**: liquor.com](https://www.liquor.com/thmb/lAIEy2Og_85HpD0oSs0MlG85w0k=/960x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/bermuda-rum-swizzle-720x720-primary-ab9d5694a0924c45ba495ba10c0aea3a.jpg)
+
+- [**Skinny-Bitch**: ketovoorbeginners.com](https://ketovoorbeginners.com/wp-content/uploads/2019/08/Skinny-Bitch.jpg)
+
+- [**Moscow Mule**: hearstapps.com](https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/tanbackground-1553877785.jpg)
+
+- [**Gimlet**: liquor.com](https://www.liquor.com/thmb/0sYe7S3WyK8FK6HfwuJGDzeU3uc=/735x0/__opt__aboutcom__coeus__resources__content_migration__liquor__2019__01__10072454__gimlet-720x720-recipe-a0d317f2ce7b4818a0fdbd2bbaaaf2c9.jpg)
+
+- [**Cosmopolitan**: wikimedia.org](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Cosmopolitan_%285076906532%29.jpg/220px-Cosmopolitan_%285076906532%29.jpg)
+
+- [**Sidecar**: liquor.com](https://www.liquor.com/thmb/4KGXdt5wcHTEE3azDlWUaOTCYnE=/735x0/__opt__aboutcom__coeus__resources__content_migration__liquor__2019__05__22111906__sidecar-720x720-recipe-4758380fb7ef4adfaafa21c3f4eed264.jpg)
+
+
+- [**Banana Bliss** cocktailmag.fr](https://www.cocktailmag.fr/media/k2/items/cache/51a3864ed3ad604d2340c3f8fe249f94_M.jpg)
+
+- [**Tequila-Sunrise** acouplecooks.com](https://www.acouplecooks.com/wp-content/uploads/2020/04/Tequila-Sunrise-003s.jpg)
+
+- [**TPORNSTAR 43** licor43.com](https://www.licor43.com/nl-nl/wp-content/uploads/sites/3/2019/10/l43-recipe-square--0011-porn-star-43-500x500.jpg)
+
+
+
+
+
 
 ## 8. Acknowledgements
 <span id="Acknowledgements"></span>
